@@ -1,13 +1,41 @@
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 @media screen and (max-width: 414px) {
+    .aventure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     h1{
         text-align: center;
         text-transform: uppercase;
         color: #1879C1;
+        font-size: 40px;
     }
     img{
             width: 350px;
-            align-items: center;
+            
         }
+    
+
+    .description {
+        margin: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px;
+    }
+    p {
+        text-align: center;
+        font-size: 20px;
+    }
+    .container_tarif {
+        background-color:#1879C1 ;
+        padding: 30px;
+    }
+
     }
     
