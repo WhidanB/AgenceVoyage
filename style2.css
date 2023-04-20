@@ -1,0 +1,13 @@
+
+@media screen and (max-width: 414px) {
+    h1{
+        text-align: center;
+        text-transform: uppercase;
+        color: #1879C1;
+    }
+    img{
+            width: 350px;
+            align-items: center;
+        }
+    }
+    
