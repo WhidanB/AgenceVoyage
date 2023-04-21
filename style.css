@@ -4,9 +4,7 @@
   /*border: 1px solid red;*/
 }
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 h2 {
@@ -54,11 +52,13 @@ section {
   width: 100%;
   height: 736px;
   z-index: 1;
+  overflow-x: hidden;
 }
 
 .slider {
-  width: 100%;
+  width: 500%;
   height: 100%;
+  display: flex;
 }
 
 .conteneur {
@@ -68,12 +68,30 @@ section {
   justify-content: space-evenly;
   height: 100%;
   width: 100%;
-  background-image: url(images/Bouthan/bhoutan.png);
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
 }
 
+.slide1 {
+  background-image: url(images/Bouthan/bhoutan.png);
+}
+
+.slide2 {
+  background-image: url(images/atacama.png);
+}
+
+.slide3 {
+  background-image: url(images/fujiyama.png);
+}
+
+.slide4 {
+  background-image: url(images/shutterstock_1919091629.png);
+}
+
+.slide5 {
+  background-image: url(images/Galapagos/tortue.png);
+}
 .prix {
   width: 90%;
   display: flex;
@@ -94,16 +112,23 @@ section {
   justify-content: space-around;
   align-items: center;
   width: 100%;
+  z-index: 3;
+  position: absolute;
+  top: 550px;
 }
 #btn {
   height: 60px;
   width: 60%;
   background: none;
   border-radius: 50px;
-  border: 2px white solid;
+  border: 3px white solid;
   color: white;
 }
-.vector {
+.vector1 {
+  height: 100%;
+}
+
+.vector2 {
   height: 100%;
 }
 
@@ -131,6 +156,7 @@ form {
 
 #reve {
   margin-top: 20px;
+  padding-top: 40px;
 }
 
 .input {
@@ -260,6 +286,10 @@ input:focus {
   font-size: 12px;
 }
 
+.alice {
+  display: flex;
+  justify-content: flex-end;
+}
 .etoile {
   height: 50px;
   display: flex;
