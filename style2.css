@@ -3,35 +3,132 @@
   padding: 0;
   box-sizing: border-box;
 }
-@media screen and (max-width: 414px) {
-  .aventure {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  h1 {
-    text-align: center;
-    text-transform: uppercase;
-    color: #1879c1;
-    font-size: 40px;
-  }
-  img {
-    width: 350px;
-  }
 
-  .description {
-    margin: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 30px;
-  }
-  p {
-    text-align: center;
-    font-size: 20px;
-  }
-  .container_tarif {
-    background-color: #1879c1;
-    padding: 30px;
-  }
-}
+    nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+      
+    .headerscroll {
+        background-color: #1879c1;
+        width: 100%;
+        height: 70px;
+        padding-top: 20px;
+        position: fixed;
+        z-index: 7;
+        color: white;
+        transition: 0.5s;
+    }
+
+    .headerscroll span {
+        color: yellow;
+    }
+
+    nav img {
+        height: 24px;
+        width: 22px;
+    }
+
+    .aventure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    h1 {
+        text-align: center;
+        text-transform: uppercase;
+        color: #1879c1;
+        font-size: 40px;
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+
+    img {
+        width: 80%;
+    }
+
+    .description {
+        margin: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px;
+    }
+
+    p {
+        text-align: center;
+        font-size: 20px;
+        color:#1879c1 ;
+    }
+
+    .container_tarif {
+        background-color: #1879c1;
+        padding: 20px;
+        margin-top: 40px;
+        color: white;
+    }
+
+    .prix{
+        font-size: 30px;
+        color: yellow;
+    }
+
+    ul {
+        list-style-type: none;
+        margin-top: 20px;
+
+    }
+    button {
+        margin-top: 40px;
+        height: 40px;
+        width: 150px;
+        border-radius: 20px;
+        background-color:#1879c1 ;
+        border: none;
+        color: white;
+        font-size: 17px;
+    }
+
+    .en_savoir_plus {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .en_savoir_plus p {
+        margin-top: 50px;
+     }
+
+    footer  { 
+        background-color:#1879c1 ;
+    }
+
+    .container_footer {
+        margin: 100px;
+        margin-bottom: 10px;
+        padding-top: 40px;
+        color: white;
+    }
+
+    .container_footer h2 span {
+        color: yellow;
+    }
+
+    .container_footer ul {
+        font-size: 20px;
+    }
+
+    .icons img {
+        width: 200px;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: center;
+    }
+
+
