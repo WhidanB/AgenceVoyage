@@ -47,7 +47,22 @@ h1 {
   margin-top: 80px;
   margin-bottom: 20px;
 }
+h1 p{
+  overflow: hidden;
+}
+h1 span{
+  display: block;
+  transform: translateY(-100%);
+  position: relative;
+  overflow: hidden;
+  animation: 0.9s titre_animation linear forwards;
+}
 
+@keyframes titre_animation {
+  to{
+    transform: initial;
+  }
+}
 img {
   width: 100%;
 }
@@ -99,7 +114,52 @@ button {
   flex-direction: column;
   align-items: center;
 }
+.carrousel {
+  position: relative;
+  width: 390px;
+  margin-bottom: 600px;
+}
 
+.carrousel :nth-child(1){
+  animation: 9s ease 0s infinite animation-carte-1;
+}
+
+.carrousel :nth-child(2){
+  animation: 9s ease 0s infinite animation-carte-2;
+}
+
+.carrousel :nth-child(3){
+  animation: 9s ease 0s infinite animation-carte-3;
+}
+
+
+@keyframes animation-carte-1 {
+  0% { opacity: 0; transform: translateX(100%); }
+  2.25% { opacity: 1; transform: translateX(0); }
+  33% { opacity: 1; transform: translateX(0); }
+  35.25% { opacity: 0; transform: translateX(-100%); }
+  100% { opacity: 0; transform: translateX(-100%); }
+}
+@keyframes animation-carte-2 {
+  0% { opacity: 0; transform: translateX(100%); }
+  35.25% { opacity: 0; transform: translateX(100%); }
+  37.5% { opacity: 1; transform: translateX(0); }
+  66% { opacity: 1; transform: translateX(0); }
+  68.25% { opacity: 0; transform: translateX(-100%); }
+  100% { opacity: 0; transform: translateX(-100%); }
+}
+@keyframes animation-carte-3 {
+  0% { opacity: 0; transform: translateX(100%); }
+  68.25% { opacity: 0; transform: translateX(100%); }
+  70.5% { opacity: 1; transform: translateX(0); }
+  97.75% { opacity: 1; transform: translateX(0); }
+  100% { opacity: 0; transform: translateX(-100%); }
+  }
+
+.carrousel img {
+  
+  position: absolute;
+}
 .en_savoir_plus p {
   margin: 50px 11px 0 11px;
   font-size: 15px;
