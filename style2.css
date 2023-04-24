@@ -103,6 +103,7 @@ button {
 .en_savoir_plus p {
   margin: 50px 11px 0 11px;
   font-size: 15px;
+  text-align: center;
 }
 
 footer {
@@ -125,7 +126,7 @@ footer {
 }
 
 .icons img {
-  width: 200px;
+  width: 50%;
 }
 
 .icons {
