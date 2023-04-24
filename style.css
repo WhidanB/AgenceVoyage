@@ -7,6 +7,14 @@ body {
   overflow-x: hidden;
   font-family: "Montserrat";
 }
+span {
+  color: #ffe600;
+}
+
+.Logo {
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
+    -1px -1px 0 #000;
+}
 
 h2 {
   color: #1879c1;
