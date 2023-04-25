@@ -38,15 +38,20 @@ nav img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
+
 h1 {
   text-align: center;
   text-transform: uppercase;
-  color: #1879c1;
+  color:white;
+  font-weight: 100;
   font-size: 40px;
-  margin-top: 80px;
+  margin-top: 150px;
   margin-bottom: 20px;
+  position: absolute;
 }
+
 h1 p{
   overflow: hidden;
 }
@@ -63,22 +68,40 @@ h1 span{
     transform: initial;
   }
 }
+.block_prix{
+  position: absolute;
+  top: 85%;
+  right:20px ;
+}
+.ap {
+  color: white;
+  text-transform: uppercase;
+}
+.prix{
+  color:yellow ;
+  font-size: 2rem;
+}
 img {
   width: 100%;
+  
 }
 
 .description {
-  margin: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 30px;
+  margin: 30px 30px 0px 30px;
 }
 
 .description p {
   text-align: center;
   font-size: 15px;
   color: #1879c1;
+  margin-bottom: 50px;
+}
+
+.block_tarif img {
+  display: none;
 }
 
 .container_tarif {
@@ -86,11 +109,6 @@ img {
   padding: 20px;
   margin-top: 40px;
   color: white;
-}
-
-.prix {
-  font-size: 30px;
-  color: yellow;
 }
 
 ul {
@@ -104,7 +122,7 @@ button {
   border-radius: 20px;
   background-color: #1879c1;
   border: none;
-  color: white;
+  color: yellow;
   font-size: 17px;
   margin-bottom: 100px;
 }
@@ -119,7 +137,9 @@ button {
   width: 390px;
   margin-bottom: 600px;
 }
-
+.grid {
+  display: none;
+}
 .carrousel :nth-child(1){
   animation: 9s ease 0s infinite animation-carte-1;
 }
@@ -164,6 +184,7 @@ button {
   margin: 50px 11px 0 11px;
   font-size: 15px;
   text-align: center;
+  color: #1879c1;
 }
 
 footer {
@@ -186,10 +207,151 @@ footer {
 }
 
 .icons img {
-  width: 50%;
+  width: 100px;
 }
 
 .icons {
   display: flex;
   justify-content: center;
 }
+
+@media screen and (min-width: 663px){
+  .headerscroll {
+    background-color: transparent;
+  }
+
+  .aventure img {
+    display: none;
+   }
+
+  h1{
+    font-size: 4rem;
+    font-weight: 500;
+  }
+
+ .block_prix {
+  position: absolute;
+  padding-right: 5%;
+  top: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+ }
+
+ .ap {
+  color: white;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.prix{
+  color:yellow ;
+  font-size: 3rem;
+}
+
+  .aventure{
+    height: 1000px;
+    background: url(./images/Bouthan/nihar-modi-uMbGXBy7bKs-unsplash.jpg);
+    background-size: cover;
+  }
+
+  .description p {
+    text-align: center;
+    font-size: 2rem;
+    color: #1879c1;
+    margin: auto;
+    width: 80%;
+    margin-top: 50px; 
+    
+    
+  }
+  .block_tarif{
+    margin-top: 100px;
+  }
+  .container_tarif {
+    background-color: white;
+    padding: 20px;
+    margin-top: 40px;
+    color:#1879c1 ;
+    width: 60%;
+    font-size: 2rem;
+    
+    
+  }
+  .block_tarif img {
+    display: flex;
+    height: auto;
+    width: 30%;
+    border-radius: 50%;
+  }
+
+  .block_tarif {
+    margin-top: 100px;
+    display: flex;
+    gap: 50px;
+    width: 90%;
+  }
+
+  .container_tarif{
+    font-size: 2rem ;
+    margin: 0;
+    padding: 0;
+  }
+
+  button{
+    margin-top: 80px;
+    width: 40%;
+    height: 70px;
+    font-size: 1.8rem;
+  }
+
+  .carrousel{
+    display: none;
+  }
+
+  .grid img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .grid {
+    display: grid;
+    border: 5px;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat( 2, 300px) ;
+    width: 90%;
+    height: auto;
+  }
+
+  .child {
+   grid-row: 1/3;
+  }
+  .child3 {
+    grid-row: 1/3;
+    grid-column: 3;
+
+  }
+}
+@media screen and (max-width: 1170px){
+  .block_tarif img {
+    display: none;
+  }
+  .container_tarif{
+    width: 90%;
+    margin: auto;
+    background-color: #1879c1;
+    color: white;
+    padding: 30px;
+  }
+  .container_tarif h3{
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1025px){
+
+}
+
