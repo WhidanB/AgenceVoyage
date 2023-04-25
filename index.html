@@ -5,21 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=BenchNine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BenchNine:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Agence de voyage</title>
   </head>
   <body>
     <header class="entete">
+      <h3 class="Logo">Explorez<span>Plus</span></h3>
       <nav>
-        <h3 class="Logo">Explorez<span>Plus</span></h3>
+        <ul class="liste">
+          <li>NOS DESTINATIONS</li>
+          <li>NOS OFFRES</li>
+          <li>NOS AGENCES</li>
+          <li>CONTACT</li>
+        </ul>
         <img class="burger" src="images/burger_icon.png" alt="" />
       </nav>
     </header>
 
-    <section class="section">
+    <section class="section1">
+      <form id="reve_ligne" action="">
+        <div class="input">
+          <img src="images/Symboles/avion.png" alt="" />
+          <input type="text" placeholder="Destination" />
+        </div>
+        <div class="input">
+          <img src="images/Symboles/localisation.png" alt="" />
+          <input type="text" placeholder="Ville de départ" />
+        </div>
+        <div class="input">
+          <img src="images/Symboles/calendrier.png" alt="" />
+          <input type="text" placeholder="Dates de départ" />
+        </div>
+        <div class="input">
+          <img src="images/Symboles/passager.png" alt="" />
+          <input type="text" placeholder="Nombre de passagers" />
+        </div>
+        <button class="rechercher">Rechercher</button>
+      </form>
       <div class="découvrez">
         <img class="vector1" src="images/Symboles/Vector 2.png" alt="" />
         <img class="vector2" src="images/Symboles/Vector 1.png" alt="" />
@@ -46,7 +77,6 @@
             <h1 id="nom">ATACAMA</h1>
             <button id="btn">DÉCOUVREZ LE SÉJOUR</button>
           </div>
-          
         </article>
         <article class="conteneur slide3 slide">
           <div class="prix">
@@ -58,7 +88,6 @@
             <h1 id="nom">LE JAPON</h1>
             <button id="btn">DÉCOUVREZ LE SÉJOUR</button>
           </div>
-          
         </article>
         <article class="conteneur slide4 slide">
           <div class="prix">
@@ -70,7 +99,6 @@
             <h1 id="nom">LE SVALBARD</h1>
             <button id="btn">DÉCOUVREZ LE SÉJOUR</button>
           </div>
-          
         </article>
         <article class="conteneur slide5 slide">
           <div class="prix">
@@ -82,9 +110,10 @@
             <h1 id="nom">LES GALAPAGOS</h1>
             <button id="btn">DÉCOUVREZ LE SÉJOUR</button>
           </div>
-          
         </article>
       </div>
+
+      <h1 class="partez">Partez<br />à<br />l'aventure</h1>
     </section>
     <section class="section2">
       <h2 class="trouvez">Trouvez les vacances de vos rêves</h2>
@@ -109,7 +138,73 @@
       </form>
       <button class="toutes">Toutes nos destinations</button>
     </section>
-    <section class="section3">
+    <section class="best-sellers hidden">
+      <h2 class="best">Nos best-sellers</h2>
+      <div class="slide_container">
+        <article class="conteneur slide1 slide">
+          <div class="jesaisplus">
+            <div class="nom">
+              <h1 id="nom">LE BOUTHAN</h1>
+            </div>
+            <div class="prix">
+              <h4>À partir de</h4>
+              <h3 id="prix">2437€</h3>
+              <h5>11 JOURS - 10 NUITS</h5>
+            </div>
+          </div>
+        </article>
+        <article class="conteneur slide2 slide">
+          <div class="jesaisplus">
+            <div class="nom">
+              <h1 id="nom">ATACAMA</h1>
+            </div>
+            <div class="prix">
+              <h4>À partir de</h4>
+              <h3 id="prix">2437€</h3>
+              <h5>11 JOURS - 10 NUITS</h5>
+            </div>
+          </div>
+        </article>
+        <article class="conteneur slide3 slide">
+          <div class="jesaisplus">
+            <div class="nom">
+              <h1 id="nom">JAPON</h1>
+            </div>
+            <div class="prix">
+              <h4>À partir de</h4>
+              <h3 id="prix">2437€</h3>
+              <h5>11 JOURS - 10 NUITS</h5>
+            </div>
+          </div>
+        </article>
+        <article class="conteneur slide4 slide">
+          <div class="jesaisplus">
+            <div class="nom">
+              <h1 id="nom">SVALBARD</h1>
+            </div>
+            <div class="prix">
+              <h4>À partir de</h4>
+              <h3 id="prix">2437€</h3>
+              <h5>11 JOURS - 10 NUITS</h5>
+            </div>
+          </div>
+        </article>
+        <article class="conteneur slide5 slide">
+          <div class="jesaisplus">
+            <div class="nom">
+              <h1 id="nom">GALAPAGOS</h1>
+            </div>
+            <div class="prix">
+              <h4>À partir de</h4>
+              <h3 id="prix">2437€</h3>
+              <h5>11 JOURS - 10 NUITS</h5>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="offres hidden">
+      <h2 class="offres">Nos offres du moment</h2>
       <div class="italie">
         <div class="prix2">
           <h4>À partir de</h4>
@@ -129,6 +224,40 @@
         <div class="nom2">
           <h1 id="nom">BERLIN</h1>
         </div>
+      </div>
+      <button>J'en profite</button>
+    </section>
+    <!-- <section class="section3">
+      <div class="italie">
+        <div class="prix2">
+          <h4>À partir de</h4>
+          <h3 id="prix">2437€</h3>
+          <h5>11 JOURS - 10 NUITS</h5>
+        </div>
+        <div class="nom2">
+          <h1 id="nom">LES CINQUE TERRE</h1>
+        </div>
+      </div>
+      <div class="allemagne">
+        <div class="prix2">
+          <h4>À partir de</h4>
+          <h3 id="prix">2437€</h3>
+          <h5>11 JOURS - 10 NUITS</h5>
+        </div>
+        <div class="nom2">
+          <h1 id="nom">BERLIN</h1>
+        </div>
+    </section> -->
+    <section class="agences hidden">
+      <h2 class="agence">Nos agences</h2>
+      <p>
+        ExplorerPlus c’est 19 agences et près de 50 conseillers qui vous
+        accueillent du lundi au samedi dans toute la France Metropolitaine afin
+        de faire de vos rêves de voyages une réalité ! Retrouvez la liste
+        complète des agences et leurs horaires d’ouverture en cliquant sur le
+        bouton ci dessous :
+      </p>
+      <img src="images/carte-france-agence.png" alt="" />
     </section>
     <section class="section4">
       <h2>Ce qu'en pensent nos voyageurs</h2>
@@ -138,10 +267,7 @@
             <img src="images/Avis/alice.png" alt="" />
           </div>
           <div class="etoile">
-            <img
-              src="images/étoiles.png"
-              alt=""
-            />
+            <img src="images/étoiles.png" alt="" />
             <p>
               "Excellent service, guides compétents et sympathiques, voyage sans
               stress. Je recommande vivement !"
@@ -156,17 +282,14 @@
             <img src="images/Avis/Clément.png" alt="" />
           </div>
           <div class="etoile">
-            <img
-              src="images/étoiles.png"
-              alt=""
-            />
+            <img src="images/étoiles.png" alt="" />
             <p>
               "Voyage de plongée incroyablement organisé, avec des hébergements
               et activités parfaitement choisis. Je recommande vivement cette
               agence."
             </p>
             <div class="alice">
-             <p>Clément</p>
+              <p>Clément</p>
             </div>
           </div>
         </article>
@@ -175,10 +298,7 @@
             <img src="images/Avis/lucas.png" alt="" />
           </div>
           <div class="etoile">
-            <img
-              src="images/étoiles.png"
-              alt=""
-            />
+            <img src="images/étoiles.png" alt="" />
             <p>
               "Hébergements superbes, guides compétents et activités amusantes
               et intéressantes. Nous avons apprécié chaque minute de notre
@@ -194,10 +314,7 @@
             <img src="images/Avis/Julie.png" alt="" />
           </div>
           <div class="etoile">
-            <img
-              src="images/étoiles.png"
-              alt=""
-            />
+            <img src="images/étoiles.png" alt="" />
             <p>
               "Première expérience d'utilisation d'une agence de voyage et j'en
               suis très satisfait. Service utile et réactif, voyage sans stress.
@@ -215,24 +332,49 @@
       <div class="formulaire">
         <h5>Remplissez le formulaire ci-dessous pour nous contacter</h5>
         <form class="form" method="" action="">
-            <div class="zone_nom">
-              <div>
-                <label for="lastname">Nom</label>
-                <input class="input" type="text" id="lastname" name="lastname" placeholder="Nom">
+          <div class="zone_nom">
+            <div>
+              <label for="lastname">Nom</label>
+              <input
+                class="input"
+                type="text"
+                id="lastname"
+                name="lastname"
+                placeholder="Nom"
+              />
             </div>
             <div>
-                <label for="firstname">Prénom</label>
-                <input class="input"type="text" id="firstname" name="firstname" placeholder="Prénom">
+              <label for="firstname">Prénom</label>
+              <input
+                class="input"
+                type="text"
+                id="firstname"
+                name="firstname"
+                placeholder="Prénom"
+              />
             </div>
-            </div>
-            <div class="zone">
-              <label for="mail">Adresse e-mail</label>
-              <input class="input" type="text" id="mail" name="mail" placeholder="monadresseMail@gmail.com">
           </div>
-            <div class="zone">
-              <label for="message">Message</label>
-              <input class="input" type="text" id="message" name="message" placeholder="Votre message">
-          </div>            <button class="rechercher">Envoyer</button>
+          <div class="zone">
+            <label for="mail">Adresse e-mail</label>
+            <input
+              class="input"
+              type="text"
+              id="mail"
+              name="mail"
+              placeholder="monadresseMail@gmail.com"
+            />
+          </div>
+          <div class="zone">
+            <label for="message">Message</label>
+            <input
+              class="input"
+              type="text"
+              id="message"
+              name="message"
+              placeholder="Votre message"
+            />
+          </div>
+          <button class="rechercher">Envoyer</button>
         </form>
       </div>
     </section>
@@ -248,10 +390,7 @@
         </ul>
       </div>
       <div class="icons">
-        <img
-          src="./images/icons.png"
-          alt=""
-        />
+        <img src="./images/icons.png" alt="" />
       </div>
     </footer>
     <script src="index.js"></script>
