@@ -70,7 +70,7 @@ h1 span{
 }
 .block_prix{
   position: absolute;
-  top: 85%;
+  top: 75%;
   right:20px ;
 }
 .ap {
@@ -98,6 +98,10 @@ img {
   font-size: 15px;
   color: #1879c1;
   margin-bottom: 50px;
+}
+
+.cercle{
+  display: none;
 }
 
 .block_tarif img {
@@ -215,6 +219,7 @@ footer {
   justify-content: center;
 }
 
+
 @media screen and (min-width: 663px){
   .headerscroll {
     background-color: transparent;
@@ -250,10 +255,41 @@ footer {
   color:yellow ;
   font-size: 3rem;
 }
-
+.aventure1 img {
+  display: none;
+}
+.aventure2 img {
+  display: none;
+}
+.aventure3 img {
+  display: none;
+}
+.aventure4 img {
+  display: none;
+}
   .aventure{
-    height: 1000px;
+    height: 100vh;
     background: url(./images/Bouthan/nihar-modi-uMbGXBy7bKs-unsplash.jpg);
+    background-size: cover;
+  }
+  .aventure1 {
+    height: 100vh;
+    background: url(./images/Japon/zhaoli-jin-e4I2ktXz5cA-unsplash.jpg);
+    background-size: cover;
+  }
+  .aventure2 {
+    height: 100vh;
+    background: url(./images/Svalbard/shutterstock_1919091629.png);
+    background-size: cover;
+  }
+  .aventure3 {
+    height: 100vh;
+    background: url(images/Svalbard/james-padolsey-6WneSv56YVI-unsplash.jpg);
+    background-size: cover;
+  }
+  .aventure4 {
+    height: 100vh;
+    background: url(images/Galapagos/tortue.png);
     background-size: cover;
   }
 
@@ -264,9 +300,8 @@ footer {
     margin: auto;
     width: 80%;
     margin-top: 50px; 
-    
-    
   }
+  
   .block_tarif{
     margin-top: 100px;
   }
@@ -284,7 +319,7 @@ footer {
     display: flex;
     height: auto;
     width: 30%;
-    border-radius: 50%;
+    
   }
 
   .block_tarif {
@@ -310,6 +345,9 @@ footer {
   .carrousel{
     display: none;
   }
+  .en_savoir_plus p {
+    font-size: 2rem;
+  }
 
   .grid img {
     width: 100%;
@@ -332,7 +370,17 @@ footer {
   .child3 {
     grid-row: 1/3;
     grid-column: 3;
-
+  }
+  .container_footer {
+    display: flex;
+    align-items: baseline;
+  }
+  .container_footer ul{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
   }
 }
 @media screen and (max-width: 1170px){
@@ -351,7 +399,86 @@ footer {
   }
 }
 
-@media screen and (min-width: 1025px){
-
+@media screen and (min-width: 1474px){
+  h1{
+    font-size: 3rem;
+    font-weight: 500;
+    
+  }
+  .block_prix {
+    width: 100%;
+  }
+  .block_tarif img {
+    display: none;
+  }
+  .container_tarif {
+    width: 100%;
+  }
+  .container_cercle {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  .cercle{
+    display:  flex;
+    width : 400px;
+    height : 400px;
+   
+    -moz-border-radius : 25px;
+    -webkit-border-radius : 25px;
+    border-radius : 300px;  /* ou 50% */
+    
+  }
+  .cercle img {
+    display: flex;
+    width: 100%;
+  }
+  /* #gauche {
+    background : url(images/Bouthan/arc.jpg);
+    background-size: cover;
+  } */
+  /* #milieu {
+    background: url(images/Bouthan/pont.jpg);
+    background-size: cover;
+  }
+  #droite {
+    background: url(images/Bouthan/moine.jpg);
+    background-size: cover;
+  } */
+  .grid {
+    display: grid;
+    border: 5px;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat( 2, 300px) ;
+    width: 90%;
+    height: auto;
+  }
+.child2 {
+  display: none;
 }
+  .child {
+   grid-row: 1/3;
+  }
+  .child3 {
+    grid-row: 1/3;
+    grid-column: 3;
+  }
+  .child4 {
+    grid-row: 1/3;
+  }
+  .block_tarif h3 {
+    text-align: center;
+  }
+  .block_tarif ul {
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  }
+  button{
+    font-size: 2.5rem;
+  }
+  }
+
 
