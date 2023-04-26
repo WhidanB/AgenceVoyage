@@ -6,6 +6,7 @@
 body {
   overflow-x: hidden;
   font-family: "Montserrat";
+  background-color: #fff9bf;
 }
 #prix {
   color: #ffe600;
@@ -86,6 +87,7 @@ button {
   width: 500%;
   height: 100%;
   display: flex;
+  transition: 0.4s;
 }
 
 .tropdeconteneurtueleconteneur {
@@ -208,10 +210,11 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 40px;
 }
 
 .trouvez {
-  margin-top: 40px;
+  width: 80%;
 }
 
 form {
@@ -286,6 +289,7 @@ input:focus {
   display: flex;
   flex-direction: column;
   position: relative;
+  border-radius: 15px;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
 }
@@ -343,6 +347,7 @@ input:focus {
 
 .section4 {
   width: 100%;
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -350,7 +355,7 @@ input:focus {
 }
 
 .section4 h2 {
-  margin: 40px 0;
+  width: 80%;
 }
 
 .carre {
@@ -363,6 +368,7 @@ input:focus {
   height: 450px;
   padding: 0 20px 20px 20px;
   border-radius: 15px;
+  margin-top: 20px;
 }
 
 .avis {
@@ -394,6 +400,11 @@ input:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 40px;
+}
+
+.section5 h2 {
+  width: 80%;
 }
 
 .formulaire {
@@ -500,7 +511,11 @@ ul {
   list-style-type: none;
   margin-top: 20px;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
+  .section3 {
+    display: none;
+  }
+
   .entete,
   .headerscroll {
     padding: 1rem 5rem;
@@ -633,40 +648,52 @@ ul {
     margin: 40px 0;
   }
 
-  .carte_container {
-    width: 80%;
+  .cartes_container {
+    height: 80vw;
+    width: 80vw;
     display: grid;
-    grid-gap: 20px;
+    justify-items: center;
+    align-items: center;
+    grid-gap: 10px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
 
-  .carte {
-    height: 30vh;
-    background-color: rgba(0, 0, 0, 0.6);
+  .ctrop {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
   }
 
   .italie {
+    width: 100%;
+    height: 100%;
     color: white;
     grid-row: 1;
     grid-column: 1;
     background-image: url(images/italie.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    border-radius: 15px;
+    border-radius: 15px 0 15px 0;
     display: flex;
     flex-flow: row wrap;
   }
 
   .allemagne {
+    width: 100%;
+    height: 100%;
     color: white;
     grid-row: 1;
     grid-column: 2;
     background-image: url(images/berlin.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 15px;
+    background-position: center;
+    border-radius: 0 15px 0 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -674,44 +701,49 @@ ul {
   }
 
   .santorini {
+    width: 100%;
+    height: 100%;
     color: white;
     background-image: url(images/santorini.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 15px;
+    border-radius: 0 15px 0 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
   }
   .turquie {
+    width: 100%;
+    height: 100%;
     color: white;
     background-image: url(images/turquie.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 15px;
+    border-radius: 15px 0 15px 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
   }
 
-  .nom2 {
+  .price {
+    position: absolute;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: flex-end;
-    padding: 0 10% 5% 0;
+    top: 5%;
+    left: 10%;
   }
-
+  #price {
+    color: #ffe600;
+  }
   .prix2 {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 5% 0 0 10%;
-  }
-
-  .italie img {
-    width: 100%;
   }
 }
