@@ -5,6 +5,9 @@
 }
 body {
   font-family: "Montserrat";
+  background: rgb(24,121,193);
+background: linear-gradient(0deg, rgba(24,121,193,1) 0%, rgba(255,255,255,1) 100%);
+
 }
 nav {
   width: 100%;
@@ -135,12 +138,14 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden;
 }
 .carrousel {
   position: relative;
   width: 390px;
   margin-bottom: 600px;
 }
+
 .grid {
   display: none;
 }
@@ -188,13 +193,10 @@ button {
   margin: 50px 11px 0 11px;
   font-size: 15px;
   text-align: center;
-  color: #1879c1;
+  color: white
 }
 
-footer {
-  background-color: #1879c1;
 
-}
 
 .container_footer {
   margin: 0 100px 10px 100px;
@@ -225,10 +227,6 @@ footer {
     background-color: transparent;
   }
 
-  .aventure img {
-    display: none;
-   }
-
   h1{
     font-size: 4rem;
     font-weight: 500;
@@ -255,6 +253,9 @@ footer {
   color:yellow ;
   font-size: 3rem;
 }
+.aventure img {
+  display: none;
+ }
 .aventure1 img {
   display: none;
 }
@@ -281,10 +282,11 @@ footer {
     height: 100vh;
     background: url(./images/Svalbard/shutterstock_1919091629.png);
     background-size: cover;
+    
   }
   .aventure3 {
     height: 100vh;
-    background: url(images/Svalbard/james-padolsey-6WneSv56YVI-unsplash.jpg);
+    background: url(images/Atacama/alex-wolowiecki-J8aY7iEbgSY-unsplash.jpg);
     background-size: cover;
   }
   .aventure4 {
@@ -306,7 +308,7 @@ footer {
     margin-top: 100px;
   }
   .container_tarif {
-    background-color: white;
+    background-color: transparent;
     padding: 20px;
     margin-top: 40px;
     color:#1879c1 ;
@@ -347,6 +349,7 @@ footer {
   }
   .en_savoir_plus p {
     font-size: 2rem;
+    color: white;
   }
 
   .grid img {
