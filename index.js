@@ -48,3 +48,32 @@ vectorRight.addEventListener("click", () => {
   // console.log(slideArray.length);
   console.log(trans);
 });
+
+//Slider
+const slide = document.querySelector(".gallery");
+let isDown = false;
+let startX;
+let scrollLeft;
+
+slide.addEventListener("mousedown", (e) => {
+  isDown = true;
+  slide.classList.add("active");
+  startX = e.pageX - slide.offsetLeft;
+  scrollLeft = slide.scrollLeft;
+});
+slide.addEventListener("mouseleave", (_) => {
+  isDown = false;
+  slide.classList.remove("active");
+});
+slide.addEventListener("mouseup", (_) => {
+  isDown = false;
+  slide.classList.remove("active");
+});
+slide.addEventListener("mousemove", (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - slide.offsetLeft;
+  const SCROLL_SPEED = 2;
+  const walk = (x - startX) * SCROLL_SPEED;
+  slide.scrollLeft = scrollLeft - walk;
+});
