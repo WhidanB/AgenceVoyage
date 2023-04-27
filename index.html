@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/aviatex.png" sizes="32x32" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,7 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=BenchNine:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <title>Agence de voyage</title>
+    <title>ExplorezPlus</title>
   </head>
   <body>
     <header class="entete">
@@ -33,11 +34,13 @@
 
     <section class="section1">
       <form id="reve_ligne" action="">
-        <div class="input">
-          <img src="images/Symboles/avion.png" alt="" />
-          <input type="text" placeholder="Destination" />
-        </div>
-        <div class="input">
+        <div class="input_container">
+
+          <div class="input">
+            <img src="images/Symboles/avion.png" alt="" />
+            <input type="text" placeholder="Destination" />
+          </div>
+          <div class="input">
           <img src="images/Symboles/localisation.png" alt="" />
           <input type="text" placeholder="Ville de départ" />
         </div>
@@ -47,8 +50,9 @@
         </div>
         <div class="input">
           <img src="images/Symboles/passager.png" alt="" />
-          <input type="text" placeholder="Nombre de passagers" />
+          <input type="text" placeholder="Passagers" />
         </div>
+      </div>
         <button class="rechercher">Rechercher</button>
       </form>
       <div class="découvrez">
@@ -125,7 +129,7 @@
         </article>
       </div>
 
-      <h1 class="partez">Partez<br />à<br />l'aventure</h1>
+      <h1 class="partez">Partez <span class="blanc"> <br />à<br />l'aventure</h1></span>
     </section>
     <section class="section2">
       <h2 class="trouvez">Trouvez les vacances de vos rêves</h2>
@@ -152,12 +156,11 @@
     </section>
     <section class="best-sellers hidden">
       <h2 class="best">Nos best-sellers</h2>
-      <ul class="gallery">
-        <li>
-          <div class="conteneur slide1 slide">
+      <div class="gallery">
+          <div class="conteneur slide1 slide ">
             <div class="jesaisplus">
               <div class="nom">
-                <h1 id="nom">LE BOUTHAN</h1>
+                <h1 id="nom">BOUTHAN</h1>
               </div>
               <div class="prix">
                 <h4>À partir de</h4>
@@ -166,8 +169,7 @@
               </div>
             </div>
           </div>
-        </li>
-        <div class="conteneur slide2 slide">
+        <div class="conteneur slide2 slide ">
           <div class="jesaisplus">
             <div class="nom">
               <h1 id="nom">ATACAMA</h1>
@@ -179,7 +181,7 @@
             </div>
           </div>
         </div>
-        <div class="conteneur slide3 slide">
+        <div class="conteneur slide3 slide ">
           <div class="jesaisplus">
             <div class="nom">
               <h1 id="nom">JAPON</h1>
@@ -191,7 +193,7 @@
             </div>
           </div>
         </div>
-        <div class="conteneur slide4 slide">
+        <div class="conteneur slide4 slide ">
           <div class="jesaisplus">
             <div class="nom">
               <h1 id="nom">SVALBARD</h1>
@@ -203,7 +205,7 @@
             </div>
           </div>
         </div>
-        <div class="conteneur slide5 slide">
+        <div class="conteneur slide5 slide ">
           <div class="jesaisplus">
             <div class="nom">
               <h1 id="nom">GALAPAGOS</h1>
@@ -219,7 +221,7 @@
     </ul>
     </section>
     <section class="offres hidden">
-      <h2 class="offres">Nos offres du moment</h2>
+      <h2 class="offre">Nos offres du moment</h2>
       <div class="cartes_container">
 
         <div class="carte italie">
@@ -332,15 +334,23 @@
     </section> 
     <section class="agences hidden">
       <h2 class="agence">Nos agences</h2>
-      <p>
-        ExplorerPlus c’est 19 agences et près de 50 conseillers qui vous
-        accueillent du lundi au samedi dans toute la France Metropolitaine afin
-        de faire de vos rêves de voyages une réalité ! Retrouvez la liste
-        complète des agences et leurs horaires d’ouverture en cliquant sur le
-        bouton ci dessous :
-      </p>
-      <img src="images/carte-france-agence.png" alt="" />
-    </section>
+      <div class="agence_container">
+        <div class="jpp">
+            <p>
+            Explorer<span>Plus</span> c’est 19 agences et près de 50 conseillers qui vous
+            accueillent du lundi au samedi dans toute la France Metropolitaine afin
+            de faire de vos rêves de voyages une réalité !</p>
+            <p>Retrouvez la liste
+            complète des agences et leurs horaires d’ouverture en cliquant sur le
+            bouton ci dessous :
+          </p>
+          <button class="agency">Nos agences</button>
+        </div>
+        <div class="france">
+          <img src="images/carte-france-agence.png" alt="" />
+        </div>
+      </div>
+      </section>
     <section class="section4">
       <h2>Ce qu'en pensent nos voyageurs</h2>
       <div class="carre">
