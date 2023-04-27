@@ -6,11 +6,11 @@ for (i = 0; i < input.length; i++) {
 }
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 100) {
+  if (window.scrollY > 50) {
     header.classList.remove("entete");
     header.classList.add("headerscroll");
   }
-  if (window.scrollY < 100) {
+  if (window.scrollY < 50) {
     header.classList.remove("headerscroll");
     header.classList.add("entete");
   }

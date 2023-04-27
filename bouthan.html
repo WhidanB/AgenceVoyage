@@ -14,10 +14,27 @@
     />
   </head>
   <body>
-    <header class="headerscroll">
+    <header class="entete">
       <nav>
         <h3>Explorez <span>Plus</span></h3>
-        <img src="images/burger_icon.svg" alt="" />
+        <div class="liste">
+          <ul>
+            <li><a href=""> NOS DESTINATIONS</a></li>
+            <li><a href="">NOS OFFRES</a></li>
+            <li><a href="">NOS AGENCES</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div> 
+        <img class="burger" src="images/burger_icon.png" alt="" />
+        <script>
+          const menuBurger = document.querySelector(".burger")
+          const liste = document.querySelector(".liste")
+   
+          menuBurger.addEventListener('click',()=>{
+          liste.classList.toggle('menu_burger')
+          })
+  
+        </script>
       </nav>
     </header>
 
@@ -110,4 +127,5 @@
       </div>
     </footer>
   </body>
+  <script src="index.js"></script>
 </html>

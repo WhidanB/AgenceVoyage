@@ -3,18 +3,32 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Montserrat";
   background: rgb(24,121,193);
 background: linear-gradient(0deg, rgba(24,121,193,1) 0%, rgba(255,255,255,1) 100%);
-
 }
+
 nav {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 0 20px;
+}
+.entete {
+  width: 100%;
+  height: 70px;
+  background: none;
+  position: fixed;
+  z-index: 7;
+  color: white;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
 }
 
 .headerscroll {
@@ -32,12 +46,46 @@ nav {
   color: yellow;
 }
 
-nav img {
+.burger {
+  position: absolute;
+  right: 2%;
   height: 24px;
-  width: 22px;
+  width: 26px;
+  
+}
+ .liste {
+  background-color: #1878c1d3;
+  position: absolute;
+  right: 2%;
+  width: 96%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  /* transition: all 0.5s ease; */
+}
+.liste ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.liste a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
 }
 
-.aventure {
+.liste.menu_burger {
+opacity: 1;
+}
+
+.aventure,
+.aventure1,
+.aventure2,
+.aventure3,
+.aventure4 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,6 +106,7 @@ h1 {
 h1 p{
   overflow: hidden;
 }
+
 h1 span{
   display: block;
   transform: translateY(-100%);
@@ -66,27 +115,34 @@ h1 span{
   animation: 0.9s titre_animation linear forwards;
 }
 
+h3 span{
+  color: yellow;
+}
+
 @keyframes titre_animation {
   to{
     transform: initial;
   }
 }
+
 .block_prix{
   position: absolute;
   top: 75%;
   right:20px ;
 }
+
 .ap {
   color: white;
   text-transform: uppercase;
 }
+
 .prix{
   color:yellow ;
   font-size: 2rem;
 }
+
 img {
   width: 100%;
-  
 }
 
 .description {
@@ -122,6 +178,7 @@ ul {
   list-style-type: none;
   margin-top: 20px;
 }
+
 button {
   margin-top: 40px;
   height: 40px;
@@ -129,9 +186,16 @@ button {
   border-radius: 20px;
   background-color: #1879c1;
   border: none;
-  color: yellow;
+  color: white;
   font-size: 17px;
   margin-bottom: 100px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+button:hover{
+  transform: scale(1.1);
+  color: yellow;
 }
 
 .en_savoir_plus {
@@ -140,6 +204,7 @@ button {
   align-items: center;
   overflow-x: hidden;
 }
+
 .carrousel {
   position: relative;
   width: 390px;
@@ -186,17 +251,15 @@ button {
   }
 
 .carrousel img {
-  
   position: absolute;
 }
+
 .en_savoir_plus p {
   margin: 50px 11px 0 11px;
   font-size: 15px;
   text-align: center;
   color: white
 }
-
-
 
 .container_footer {
   margin: 0 100px 10px 100px;
@@ -223,6 +286,7 @@ button {
 
 
 @media screen and (min-width: 663px){
+ 
   .headerscroll {
     background-color: transparent;
   }
@@ -231,12 +295,16 @@ button {
     font-size: 4rem;
     font-weight: 500;
   }
+  .liste a{
+    
+    font-size: 2rem;
+  }
 
  .block_prix {
-  position: absolute;
+  /* position: absolute;
   padding-right: 5%;
   top: 80%;
-  width: 100%;
+  width: 100%; */
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -281,8 +349,7 @@ button {
   .aventure2 {
     height: 100vh;
     background: url(./images/Svalbard/shutterstock_1919091629.png);
-    background-size: cover;
-    
+    background-size: cover; 
   }
   .aventure3 {
     height: 100vh;
@@ -307,6 +374,7 @@ button {
   .block_tarif{
     margin-top: 100px;
   }
+
   .container_tarif {
     background-color: transparent;
     padding: 20px;
@@ -314,13 +382,13 @@ button {
     color:#1879c1 ;
     width: 60%;
     font-size: 2rem;
-    
-    
   }
+
   .block_tarif img {
     display: flex;
     height: auto;
     width: 30%;
+    
     
   }
 
@@ -335,6 +403,7 @@ button {
     font-size: 2rem ;
     margin: 0;
     padding: 0;
+    width: 100%;
   }
 
   button{
@@ -370,14 +439,17 @@ button {
   .child {
    grid-row: 1/3;
   }
+
   .child3 {
     grid-row: 1/3;
     grid-column: 3;
   }
+
   .container_footer {
     display: flex;
     align-items: baseline;
   }
+
   .container_footer ul{
     display: flex;
     gap: 20px;
@@ -385,70 +457,128 @@ button {
     justify-content: space-evenly;
     flex-wrap: wrap;
   }
+  .images img{
+    display: flex;
+    width:350px;
+    height: 350px;
+  }
+  .container_cercle {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  .images  {
+    display: flex;
+    justify-content: center;
+  }
+  .container_tarif h3 {
+    text-align: center;
+  }
+  .container_tarif ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 @media screen and (max-width: 1170px){
+ 
   .block_tarif img {
     display: none;
   }
+  
+
   .container_tarif{
     width: 90%;
     margin: auto;
     background-color: #1879c1;
     color: white;
     padding: 30px;
-  }
-  .container_tarif h3{
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 1474px){
-  h1{
-    font-size: 3rem;
-    font-weight: 500;
     
   }
+  .container_tarif ul {
+
+  }
+
+ 
+
+ 
+}
+
+@media screen and (min-width: 2070px){
+  .liste{
+    opacity: 1;
+    background-color: transparent;
+    position: absolute;
+    right: 5%;
+    width: 100%;
+    height: 1vh;
+    display: flex;
+    justify-content: flex-end;
+    
+  }
+  
+  .liste ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav img {
+    display: none;
+  }
+  nav h3 {
+  font-size: 2rem;
+ }
+  h1{
+    font-size: 4rem;
+    font-weight: 500;
+  }
+
   .block_prix {
     width: 100%;
   }
+
   .block_tarif img {
     display: none;
+  }
+
+  .images img{
+    display: flex;
+    width: 500px;
+    height: 500px;
+  }
+  .images{
+    display: flex;
   }
   .container_tarif {
     width: 100%;
   }
+  .container_tarif ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .container_cercle {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     width: 100%;
     margin-bottom: 100px;
   }
-  .cercle{
+
+  /* .cercle{
+    
     display:  flex;
     width : 400px;
     height : 400px;
-   
     -moz-border-radius : 25px;
     -webkit-border-radius : 25px;
-    border-radius : 300px;  /* ou 50% */
-    
-  }
-  .cercle img {
-    display: flex;
-    width: 100%;
-  }
-  /* #gauche {
-    background : url(images/Bouthan/arc.jpg);
-    background-size: cover;
+    border-radius : 300px; 
   } */
-  /* #milieu {
-    background: url(images/Bouthan/pont.jpg);
-    background-size: cover;
-  }
-  #droite {
-    background: url(images/Bouthan/moine.jpg);
-    background-size: cover;
-  } */
+  
+
+
+
   .grid {
     display: grid;
     border: 5px;
@@ -458,27 +588,34 @@ button {
     width: 90%;
     height: auto;
   }
-.child2 {
-  display: none;
-}
-  .child {
-   grid-row: 1/3;
+
+  .child2 {
+    display: none;
   }
+
+  .child {
+    grid-row: 1/3;
+  }
+
   .child3 {
     grid-row: 1/3;
     grid-column: 3;
   }
+
   .child4 {
     grid-row: 1/3;
   }
+
   .block_tarif h3 {
     text-align: center;
   }
+
   .block_tarif ul {
-  width: 80%;
-  margin: auto;
-  margin-top: 50px;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
   }
+
   button{
     font-size: 2.5rem;
   }

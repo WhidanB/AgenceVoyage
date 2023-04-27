@@ -14,10 +14,27 @@
     />
   </head>
   <body>
-    <header class="headerscroll">
+    <header class="entete">
       <nav>
         <h3>Explorez <span>Plus</span></h3>
-        <img src="images/burger_icon.svg" alt="">
+        <div class="liste">
+          <ul>
+            <li><a href=""> NOS DESTINATIONS</a></li>
+            <li><a href="">NOS OFFRES</a></li>
+            <li><a href="">NOS AGENCES</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div> 
+        <img class="burger" src="images/burger_icon.svg" alt="" />
+        <script>
+          const menuBurger = document.querySelector(".burger")
+          const liste = document.querySelector(".liste")
+   
+          menuBurger.addEventListener('click',()=>{
+          liste.classList.toggle('menu_burger')
+          })
+  
+        </script>
       </nav>
     </header>
 
@@ -46,12 +63,15 @@
           du thé et la dégustation de sake.
         </p>
         <div class="block_tarif">
-          <img src="images/Japon/syuhei-inoue-kaoHI0iHJPM-unsplash.jpg" alt="">
+          <!-- <img src="images/Japon/syuhei-inoue-kaoHI0iHJPM-unsplash.jpg" alt=""> -->
           <div class="container_tarif">
             <div class="container_cercle">
-              <div class="cercle" ><img src="images/Japon/lin-mei-NYyCqdBOKwc-unsplash.jpg"></div>
-              <div class="cercle" ><img src="images/Japon/syuhei-inoue-kaoHI0iHJPM-unsplash.jpg"></div>
-              <div class="cercle" ><img src="images/Japon/tianshu-liu-SBK40fdKbAg-unsplash.jpg"></div>
+              <div class="images">
+                <img src="images/Japon/lin-mei-NYyCqdBOKwc-unsplash.jpg">
+                <img src="images/Japon/syuhei-inoue-kaoHI0iHJPM-unsplash.jpg">
+                <img src="images/Japon/tianshu-liu-SBK40fdKbAg-unsplash.jpg">
+                <img src="images/Japon/svetlana-gumerova-6fAgnT3Dhl4-unsplash.jpg" alt="">
+              </div>  
             </div> 
             <h3>Inclus dans le tarif</h3>
             <ul>
@@ -71,9 +91,9 @@
       </section>
       <section class="en_savoir_plus">
         <div class="carrousel">
-          <img src="./images/Japon/david-emrich-VCM99u6HltA-unsplash.jpg" alt="">
-          <img src="./images/Japon/syuhei-inoue-kaoHI0iHJPM-unsplash.jpg" alt="">
-          <img src="./images/Japon/yoav-aziz-tKCd-IWc4gI-unsplash.jpg" alt="">
+            <img src="./images/Japon/david-emrich-VCM99u6HltA-unsplash.jpg" alt="">
+            <img src="./images/Japon/syuhei-inoue-kaoHI0iHJPM-unsplash.jpg" alt="">
+            <img src="./images/Japon/yoav-aziz-tKCd-IWc4gI-unsplash.jpg" alt="">
         </div>
         <div class="grid">
           <div class="child"><img src="images/Japon/atul-vinayak-XHanhWuJGwE-unsplash.jpg"></div>
@@ -108,4 +128,5 @@
       </div>
     </footer>
   </body>
+  <script src="index.js"></script>
 </html>
