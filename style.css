@@ -6,7 +6,6 @@
 body {
   overflow-x: hidden;
   font-family: "Montserrat";
-  background-color: #fff9bf;
 }
 #prix {
   color: rgb(255, 230, 0);
@@ -1088,6 +1087,14 @@ ul {
   .carre {
     border: 3px white solid;
     width: 30vw;
+    color: #ffffff;
+  }
+  .etoile p {
+    color: #ffffff;
+  }
+
+  .alice p {
+    color: #ffffff;
   }
 }
 
