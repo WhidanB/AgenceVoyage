@@ -6,8 +6,12 @@
 
 body {
   font-family: "Montserrat";
-  background: rgb(24,121,193);
-background: linear-gradient(0deg, rgba(24,121,193,1) 0%, rgba(255,255,255,1) 100%);
+  background: rgb(24, 121, 193);
+  background: linear-gradient(
+    0deg,
+    rgba(24, 121, 193, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 
 nav {
@@ -46,14 +50,18 @@ nav {
   color: yellow;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 .burger {
   position: absolute;
   right: 2%;
   height: 24px;
   width: 26px;
-  
 }
- .liste {
+.liste {
   background-color: #1878c1d3;
   position: absolute;
   right: 2%;
@@ -71,14 +79,14 @@ nav {
   align-items: center;
   gap: 30px;
 }
-.liste a{
+.liste a {
   text-decoration: none;
   color: white;
   font-size: 1.5rem;
 }
 
 .liste.menu_burger {
-opacity: 1;
+  opacity: 1;
 }
 
 .aventure,
@@ -95,7 +103,7 @@ opacity: 1;
 h1 {
   text-align: center;
   text-transform: uppercase;
-  color:white;
+  color: white;
   font-weight: 100;
   font-size: 40px;
   margin-top: 150px;
@@ -103,11 +111,11 @@ h1 {
   position: absolute;
 }
 
-h1 p{
+h1 p {
   overflow: hidden;
 }
 
-h1 span{
+h1 span {
   display: block;
   transform: translateY(-100%);
   position: relative;
@@ -115,20 +123,20 @@ h1 span{
   animation: 0.9s titre_animation linear forwards;
 }
 
-h3 span{
+h3 span {
   color: yellow;
 }
 
 @keyframes titre_animation {
-  to{
+  to {
     transform: initial;
   }
 }
 
-.block_prix{
+.block_prix {
   position: absolute;
   top: 75%;
-  right:20px ;
+  right: 20px;
 }
 
 .ap {
@@ -136,8 +144,8 @@ h3 span{
   text-transform: uppercase;
 }
 
-.prix{
-  color:yellow ;
+.prix {
+  color: yellow;
   font-size: 2rem;
 }
 
@@ -159,7 +167,7 @@ img {
   margin-bottom: 50px;
 }
 
-.cercle{
+.cercle {
   display: none;
 }
 
@@ -193,7 +201,7 @@ button {
   transition: transform 0.2s;
 }
 
-button:hover{
+button:hover {
   transform: scale(1.1);
   color: yellow;
 }
@@ -214,41 +222,88 @@ button:hover{
 .grid {
   display: none;
 }
-.carrousel :nth-child(1){
+.carrousel :nth-child(1) {
   animation: 9s ease 0s infinite animation-carte-1;
 }
 
-.carrousel :nth-child(2){
+.carrousel :nth-child(2) {
   animation: 9s ease 0s infinite animation-carte-2;
 }
 
-.carrousel :nth-child(3){
+.carrousel :nth-child(3) {
   animation: 9s ease 0s infinite animation-carte-3;
 }
 
-
 @keyframes animation-carte-1 {
-  0% { opacity: 0; transform: translateX(100%); }
-  2.25% { opacity: 1; transform: translateX(0); }
-  33% { opacity: 1; transform: translateX(0); }
-  35.25% { opacity: 0; transform: translateX(-100%); }
-  100% { opacity: 0; transform: translateX(-100%); }
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  2.25% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  33% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  35.25% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
 }
 @keyframes animation-carte-2 {
-  0% { opacity: 0; transform: translateX(100%); }
-  35.25% { opacity: 0; transform: translateX(100%); }
-  37.5% { opacity: 1; transform: translateX(0); }
-  66% { opacity: 1; transform: translateX(0); }
-  68.25% { opacity: 0; transform: translateX(-100%); }
-  100% { opacity: 0; transform: translateX(-100%); }
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  35.25% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  37.5% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  66% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  68.25% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
 }
 @keyframes animation-carte-3 {
-  0% { opacity: 0; transform: translateX(100%); }
-  68.25% { opacity: 0; transform: translateX(100%); }
-  70.5% { opacity: 1; transform: translateX(0); }
-  97.75% { opacity: 1; transform: translateX(0); }
-  100% { opacity: 0; transform: translateX(-100%); }
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
   }
+  68.25% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  70.5% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  97.75% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
 
 .carrousel img {
   position: absolute;
@@ -258,7 +313,7 @@ button:hover{
   margin: 50px 11px 0 11px;
   font-size: 15px;
   text-align: center;
-  color: white
+  color: white;
 }
 
 .container_footer {
@@ -284,59 +339,56 @@ button:hover{
   justify-content: center;
 }
 
-
-@media screen and (min-width: 663px){
- 
+@media screen and (min-width: 663px) {
   .headerscroll {
     background-color: transparent;
   }
 
-  h1{
+  h1 {
     font-size: 4rem;
     font-weight: 500;
   }
-  .liste a{
-    
+  .liste a {
     font-size: 2rem;
   }
 
- .block_prix {
-  /* position: absolute;
+  .block_prix {
+    /* position: absolute;
   padding-right: 5%;
   top: 80%;
   width: 100%; */
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-end;
- }
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
 
- .ap {
-  color: white;
-  text-transform: uppercase;
-  font-size: 2rem;
-}
+  .ap {
+    color: white;
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
 
-.prix{
-  color:yellow ;
-  font-size: 3rem;
-}
-.aventure img {
-  display: none;
- }
-.aventure1 img {
-  display: none;
-}
-.aventure2 img {
-  display: none;
-}
-.aventure3 img {
-  display: none;
-}
-.aventure4 img {
-  display: none;
-}
-  .aventure{
+  .prix {
+    color: yellow;
+    font-size: 3rem;
+  }
+  .aventure img {
+    display: none;
+  }
+  .aventure1 img {
+    display: none;
+  }
+  .aventure2 img {
+    display: none;
+  }
+  .aventure3 img {
+    display: none;
+  }
+  .aventure4 img {
+    display: none;
+  }
+  .aventure {
     height: 100vh;
     background: url(./images/Bouthan/nihar-modi-uMbGXBy7bKs-unsplash.jpg);
     background-size: cover;
@@ -349,7 +401,7 @@ button:hover{
   .aventure2 {
     height: 100vh;
     background: url(./images/Svalbard/shutterstock_1919091629.png);
-    background-size: cover; 
+    background-size: cover;
   }
   .aventure3 {
     height: 100vh;
@@ -368,10 +420,10 @@ button:hover{
     color: #1879c1;
     margin: auto;
     width: 80%;
-    margin-top: 50px; 
+    margin-top: 50px;
   }
-  
-  .block_tarif{
+
+  .block_tarif {
     margin-top: 100px;
   }
 
@@ -379,7 +431,7 @@ button:hover{
     background-color: transparent;
     padding: 20px;
     margin-top: 40px;
-    color:#1879c1 ;
+    color: #1879c1;
     width: 60%;
     font-size: 2rem;
   }
@@ -388,8 +440,6 @@ button:hover{
     display: flex;
     height: auto;
     width: 30%;
-    
-    
   }
 
   .block_tarif {
@@ -399,21 +449,21 @@ button:hover{
     width: 90%;
   }
 
-  .container_tarif{
-    font-size: 2rem ;
+  .container_tarif {
+    font-size: 2rem;
     margin: 0;
     padding: 0;
     width: 100%;
   }
 
-  button{
+  button {
     margin-top: 80px;
     width: 40%;
     height: 70px;
     font-size: 1.8rem;
   }
 
-  .carrousel{
+  .carrousel {
     display: none;
   }
   .en_savoir_plus p {
@@ -431,13 +481,13 @@ button:hover{
     border: 5px;
     grid-gap: 20px;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: repeat( 2, 300px) ;
+    grid-template-rows: repeat(2, 300px);
     width: 90%;
     height: auto;
   }
 
   .child {
-   grid-row: 1/3;
+    grid-row: 1/3;
   }
 
   .child3 {
@@ -450,23 +500,23 @@ button:hover{
     align-items: baseline;
   }
 
-  .container_footer ul{
+  .container_footer ul {
     display: flex;
     gap: 20px;
     width: 100%;
     justify-content: space-evenly;
     flex-wrap: wrap;
   }
-  .images img{
+  .images img {
     display: flex;
-    width:350px;
+    width: 350px;
     height: 350px;
   }
   .container_cercle {
     width: 100%;
     margin-bottom: 100px;
   }
-  .images  {
+  .images {
     display: flex;
     justify-content: center;
   }
@@ -480,32 +530,24 @@ button:hover{
     align-items: center;
   }
 }
-@media screen and (max-width: 1170px){
- 
+@media screen and (max-width: 1170px) {
   .block_tarif img {
     display: none;
   }
-  
 
-  .container_tarif{
+  .container_tarif {
     width: 90%;
     margin: auto;
     background-color: #1879c1;
     color: white;
     padding: 30px;
-    
   }
   .container_tarif ul {
-
   }
-
- 
-
- 
 }
 
-@media screen and (min-width: 2070px){
-  .liste{
+@media screen and (min-width: 2070px) {
+  .liste {
     opacity: 1;
     background-color: transparent;
     position: absolute;
@@ -514,9 +556,8 @@ button:hover{
     height: 1vh;
     display: flex;
     justify-content: flex-end;
-    
   }
-  
+
   .liste ul {
     display: flex;
     flex-direction: row;
@@ -526,9 +567,9 @@ button:hover{
     display: none;
   }
   nav h3 {
-  font-size: 2rem;
- }
-  h1{
+    font-size: 2rem;
+  }
+  h1 {
     font-size: 4rem;
     font-weight: 500;
   }
@@ -541,12 +582,12 @@ button:hover{
     display: none;
   }
 
-  .images img{
+  .images img {
     display: flex;
     width: 500px;
     height: 500px;
   }
-  .images{
+  .images {
     display: flex;
   }
   .container_tarif {
@@ -575,16 +616,13 @@ button:hover{
     -webkit-border-radius : 25px;
     border-radius : 300px; 
   } */
-  
-
-
 
   .grid {
     display: grid;
     border: 5px;
     grid-gap: 20px;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: repeat( 2, 300px) ;
+    grid-template-rows: repeat(2, 300px);
     width: 90%;
     height: auto;
   }
@@ -616,9 +654,7 @@ button:hover{
     margin-top: 50px;
   }
 
-  button{
+  button {
     font-size: 2.5rem;
   }
-  }
-
-
+}

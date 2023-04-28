@@ -19,6 +19,10 @@ span {
     -1px -1px 0 #000;
 }
 
+.Logo:hover {
+  cursor: pointer;
+}
+
 h2 {
   color: #1879c1;
   font-size: 32px;
@@ -29,6 +33,12 @@ button {
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-size: 20px;
+}
+
+button:hover {
+  scale: 1.2;
+  color: #ffe600;
+  cursor: pointer;
 }
 
 .entete {
@@ -50,6 +60,19 @@ button {
   flex-direction: row;
 }
 
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:focus {
+  text-decoration: none;
+  color: white;
+}
+
+a:active {
+  color: #ffffff;
+}
 .headerscroll {
   background-color: #1879c1;
   width: 100%;
@@ -117,6 +140,11 @@ button {
   background-size: cover;
   color: white;
 }
+
+.conteneur:hover {
+  cursor: pointer;
+}
+
 .LaPhoto {
   width: 100%;
   height: 100%;
@@ -555,16 +583,7 @@ ul {
   .best {
     margin-top: 40px;
   }
-  /*
-  .slide_container {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    height: 700px;
-  }
-  */
+
   .conteneur {
     position: static;
     display: flex;
@@ -828,24 +847,6 @@ ul {
     display: none;
   }
 
-  /* .gallery {
-    padding: 1rem;
-    display: grid;
-    grid-template-columns: repeat(5, 20vw);
-    grid-template-rows: 1fr;
-    grid-column-gap: 1rem;
-    grid-row-gap: 1rem;
-    overflow-x: scroll;
-    height: 90vh;
-    width: 80%;
-    scroll-snap-type: unset;
-    scroll-padding: 1rem;
-    border-radius: 15px;
-  }
-
-  .slide:hover {
-  } */
-
   .gallery {
     margin-top: 3vh;
     height: 100vh;
@@ -854,6 +855,12 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 15px;
+  }
+
+  .gallery a {
+    border-radius: 15px;
+    transition: 0.4s ease-out;
   }
 
   .gallery h2 {
@@ -873,25 +880,25 @@ ul {
     left: 0px;
   }
 
-  .slide:not(:first-child) {
+  .gallery a:not(:first-child) {
     margin-left: -5vw;
   }
-  .slide:first-child {
+  .gallery a:first-child {
     box-shadow: none;
   }
 
-  .slide:first-child:hover {
+  .gallery a:first-child:hover {
     box-shadow: none;
   }
 
-  .slide:hover {
+  .gallery a:hover {
     transform: translateY(-1.8vh);
     transition: 0.4s ease-out;
     -webkit-box-shadow: -50px 22pxpx 13px -8px rgba(0, 0, 0, 0.69);
     box-shadow: -50px 22px 13px -8px rgba(0, 0, 0, 0.69);
   }
 
-  .slide:hover ~ .slide {
+  .gallery a:hover ~ a {
     position: relative;
     left: 8vh;
     transition: 0.4s ease-out;
@@ -916,7 +923,11 @@ ul {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
   }
-
+  .carte {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+  }
   .ctrop {
     display: flex;
     flex-direction: column;
@@ -928,22 +939,18 @@ ul {
   }
 
   .italie {
-    width: 100%;
-    height: 100%;
     color: white;
     grid-row: 1;
     grid-column: 1;
     background-image: url(images/italie.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 15px 0 15px 0;
+
     display: flex;
     flex-flow: row wrap;
   }
 
   .allemagne {
-    width: 100%;
-    height: 100%;
     color: white;
     grid-row: 1;
     grid-column: 2;
@@ -951,7 +958,7 @@ ul {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border-radius: 0 15px 0 15px;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -959,41 +966,28 @@ ul {
   }
 
   .santorini {
-    width: 100%;
-    height: 100%;
     color: white;
     background-image: url(images/santorini.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 0 15px 0 15px;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
   }
   .turquie {
-    width: 100%;
-    height: 100%;
     color: white;
     background-image: url(images/turquie.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 15px 0 15px 0;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
   }
 
-  .price {
-    position: absolute;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    top: 5%;
-    left: 10%;
-  }
   #price {
     color: #ffe600;
   }
@@ -1026,6 +1020,10 @@ ul {
     height: 60vh;
     width: 80vw;
     vertical-align: top;
+  }
+
+  .agency:hover {
+    color: #ffe600;
   }
   .france {
     width: 50%;
@@ -1074,20 +1072,21 @@ ul {
     background-size: cover;
     background-repeat: no-repeat;
     align-items: flex-end;
-    justify-content: center;
-    padding-right: 10vw;
+    justify-content: space-evenly;
   }
 
   .section4 h2 {
     color: #ffffff;
     font-size: 40px;
     width: 30vw;
+    margin-right: 5vw;
   }
 
   .carre {
     border: 3px white solid;
     width: 30vw;
     color: #ffffff;
+    margin-right: 5vw;
   }
   .etoile p {
     color: #ffffff;
@@ -1095,6 +1094,84 @@ ul {
 
   .alice p {
     color: #ffffff;
+  }
+
+  .section5 {
+    height: 100vh;
+    justify-content: space-evenly;
+  }
+
+  .formulaire {
+    background-color: #1879c1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 40vw;
+    margin-top: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+  }
+  label {
+    color: white;
+    font-size: 20px;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .form label {
+    padding-left: 1rem;
+  }
+
+  .formulaire h5 {
+    width: 90%;
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+    font-size: 20px;
+  }
+  .zone_nom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    width: 90%;
+  }
+
+  .zone_nom div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+  }
+
+  .zone_nom div .input {
+    width: 100%;
+  }
+
+  .zone {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+  }
+  .zone .input {
+    width: 100%;
+  }
+
+  .envoyer {
+    width: 30%;
+    height: 60px;
+    border: none;
+    border-radius: 15px;
+    background-color: #ffffff;
+    margin: 20px 0;
+    color: #1879c1;
   }
 }
 
@@ -1179,5 +1256,23 @@ ul {
     margin-bottom: 12vh;
     margin-left: 5vw;
     font-size: 84px;
+  }
+}
+
+@media screen and (width: 2560px) and (height: 1440px) {
+  .section4 h2 {
+    color: #ffffff;
+    font-size: 40px;
+    width: 20vw;
+    margin-right: 5vw;
+  }
+
+  .carre {
+    width: 20vw;
+    margin-right: 5vw;
+  }
+
+  .formulaire {
+    width: 30vw;
   }
 }
