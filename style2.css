@@ -349,7 +349,7 @@ button:hover {
     font-weight: 500;
   }
   .liste a {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   .block_prix {
@@ -542,11 +542,9 @@ button:hover {
     color: white;
     padding: 30px;
   }
-  .container_tarif ul {
-  }
 }
 
-@media screen and (min-width: 2070px) {
+@media screen and (min-width: 1200px) {
   .liste {
     opacity: 1;
     background-color: transparent;
@@ -566,9 +564,11 @@ button:hover {
   nav img {
     display: none;
   }
+
   nav h3 {
     font-size: 2rem;
   }
+
   h1 {
     font-size: 4rem;
     font-weight: 500;
@@ -587,12 +587,15 @@ button:hover {
     width: 500px;
     height: 500px;
   }
+
   .images {
     display: flex;
   }
+
   .container_tarif {
     width: 100%;
   }
+
   .container_tarif ul {
     display: flex;
     flex-direction: column;
