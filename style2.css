@@ -13,13 +13,8 @@ body {
     rgba(255, 255, 255, 1) 100%
   );
 }
-
-nav {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0 20px;
+header {
+  position: relative;
 }
 .entete {
   width: 100%;
@@ -35,58 +30,75 @@ nav {
   padding: 20px;
 }
 
-.headerscroll {
-  background-color: #1879c1;
-  width: 100%;
-  height: 70px;
-  padding-top: 20px;
-  position: fixed;
-  z-index: 7;
-  color: white;
-  transition: 0.5s;
-}
-
-.headerscroll span {
-  color: yellow;
+.liste {
+  display: none;
+  flex-direction: row;
 }
 
 a {
   text-decoration: none;
-  color: white;
+  color: #ffffff;
 }
 
-.burger {
-  position: absolute;
-  right: 2%;
-  height: 24px;
-  width: 26px;
-}
-.liste {
-  background-color: #1878c1d3;
-  position: absolute;
-  right: 2%;
-  width: 96%;
-  height: 30vh;
-  display: flex;
-  justify-content: center;
-  opacity: 0;
-  /* transition: all 0.5s ease; */
-}
-.liste ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
-.liste a {
+a:focus {
   text-decoration: none;
   color: white;
-  font-size: 1.5rem;
+}
+.hidden {
+  display: none;
+}
+.affich {
+  display: flex;
+}
+a:active {
+  color: #ffffff;
+}
+.headerscroll {
+  background-color: #1879c1;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  z-index: 7;
+  color: white;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.hidden {
+  display: none;
+}
+.burger {
+  height: 22px;
+  width: 24px;
 }
 
-.liste.menu_burger {
-  opacity: 1;
+.context {
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  gap: 20px;
+  width: 100vw;
+  height: 30vw;
+  top: 70px;
+  background-color: #1879c1;
+  padding: 0;
+  margin: 0;
+  left: 0;
+  transition: 0.4s ease-out;
+}
+
+.context ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.burger:hover {
+  cursor: pointer;
 }
 
 .aventure,
@@ -184,7 +196,6 @@ img {
 
 ul {
   list-style-type: none;
-  margin-top: 20px;
 }
 
 button {
@@ -340,10 +351,6 @@ button:hover {
 }
 
 @media screen and (min-width: 663px) {
-  .headerscroll {
-    background-color: transparent;
-  }
-
   h1 {
     font-size: 4rem;
     font-weight: 500;
@@ -531,6 +538,10 @@ button:hover {
   }
 }
 @media screen and (max-width: 1170px) {
+  .burger {
+    display: none;
+  }
+
   .block_tarif img {
     display: none;
   }
@@ -545,20 +556,14 @@ button:hover {
 }
 
 @media screen and (min-width: 1200px) {
-  .liste {
-    opacity: 1;
-    background-color: transparent;
-    position: absolute;
-    right: 5%;
-    width: 100%;
-    height: 1vh;
-    display: flex;
-    justify-content: flex-end;
+  .burger {
+    display: none;
   }
-
-  .liste ul {
+  .liste {
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin: 0;
   }
 
   nav img {

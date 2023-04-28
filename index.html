@@ -21,18 +21,27 @@
   <body>
     <header class="entete">
       <a href="index.html">
-
         <h3 class="Logo">Explorez<span>Plus</span></h3>
       </a>
-      <nav>
-        <ul class="liste">
-          <li><a href="#destinations">NOS DESTINATIONS</a></li>
-          <li> <a href="#offres">NOS OFFRES</a></li>
-          <li> <a href="#agences">NOS AGENCES</a></li>
-          <li> <a href="#contact">CONTACT</a></li>
+
+      <ul class="liste">
+        <li><a href="#destinations">NOS DESTINATIONS</a></li>
+        <li><a href="#offres">NOS OFFRES</a></li>
+        <li><a href="#agences">NOS AGENCES</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+
+      <div class="context hidden">
+        <ul>
+          <li><a href="#vacances">NOS DESTINATIONS</a></li>
+          <li><a href="#offres">NOS OFFRES</a></li>
+          <li><a href="#agences">NOS AGENCES</a></li>
+          <li><a href="#contact">CONTACT</a></li>
         </ul>
-        <img class="burger" src="images/burger_icon.png" alt="" />
-      </nav>
+      </div>
+      <div class="burger">
+        <img src="images/burger_icon.png" alt="" />
+      </div>
     </header>
 
     <section class="section1">
@@ -134,7 +143,7 @@
 
       <h1 class="partez">Partez <span class="blanc"> <br />à<br />l'aventure</h1></span>
     </section>
-    <section class="section2">
+    <section class="section2"  id="vacances">
       <h2 class="trouvez">Trouvez les vacances de vos rêves</h2>
       <form id="reve" action="">
         <div class="input">
@@ -237,7 +246,7 @@
     <button class="toutes">Toutes nos destinations</button>
     </section>
     <section class="offres hidden" id="offres">
-      <h2 class="offre">Nos offres du moment</h2>
+      <h2 class="offre">Nos <span class="BLEU">offres</span> du moment</h2>
       <div class="cartes_container">
 
         <div class="carte italie">
@@ -294,7 +303,7 @@
       </div>
         <button class="toutes">J'en profite</button>
       </section>
-    <section class="section3">
+    <section class="section3" id="moment">
       <h2>Nos Offres du moment</h2>
       <div class="italie">
         <div class="ctrop">
@@ -502,5 +511,6 @@
       </div>
     </footer>
     <script src="index.js"></script>
+    <script src="vector.js"></script>
   </body>
 </html>

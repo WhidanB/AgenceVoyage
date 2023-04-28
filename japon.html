@@ -18,28 +18,28 @@
   </head>
   <body>
     <header class="entete">
-      <nav>
-        <a href="index.html">
-          <h3>Explorez <span>Plus</span></h3>
-        </a>
-        <div class="liste">
-          <ul>
-            <li><a href="index.html#destinations"> NOS DESTINATIONS</a></li>
-            <li><a href="index.html#offres">NOS OFFRES</a></li>
-            <li><a href="index.html#agences">NOS AGENCES</a></li>
-            <li><a href="index.html#contact">CONTACT</a></li>
-          </ul>
-        </div>
-        <img class="burger" src="images/burger_icon.svg" alt="" />
-        <script>
-          const menuBurger = document.querySelector(".burger");
-          const liste = document.querySelector(".liste");
+      <a href="index.html">
+        <h3 class="Logo">Explorez<span>Plus</span></h3>
+      </a>
 
-          menuBurger.addEventListener("click", () => {
-            liste.classList.toggle("menu_burger");
-          });
-        </script>
-      </nav>
+      <ul class="liste">
+        <li><a href="#destinations">NOS DESTINATIONS</a></li>
+        <li><a href="#offres">NOS OFFRES</a></li>
+        <li><a href="#agences">NOS AGENCES</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+
+      <div class="context hidden">
+        <ul>
+          <li><a href="#destinations">NOS DESTINATIONS</a></li>
+          <li><a href="#offres">NOS OFFRES</a></li>
+          <li><a href="#agences">NOS AGENCES</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+      <div class="burger">
+        <img src="images/burger_icon.png" alt="" />
+      </div>
     </header>
 
     <main>
