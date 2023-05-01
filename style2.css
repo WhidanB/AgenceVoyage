@@ -538,10 +538,6 @@ button:hover {
   }
 }
 @media screen and (max-width: 1170px) {
-  .burger {
-    display: none;
-  }
-
   .block_tarif img {
     display: none;
   }

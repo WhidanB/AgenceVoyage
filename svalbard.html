@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>svalbard</title>
+    <title>Expédition polaire au Svalbard</title>
+    <link rel="icon" href="images/aviatex.png" sizes="32x32" type="image/png" />
     <link rel="stylesheet" href="style2.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,94 +14,134 @@
     />
   </head>
   <body>
-    <header class="headerscroll">
-      <nav>
-        <h3>Explorez <span>Plus</span></h3>
-        <div class="liste">
-          <ul>
-            <li><a href=""> NOS DESTINATIONS</a></li>
-            <li><a href="">NOS OFFRES</a></li>
-            <li><a href="">NOS AGENCES</a></li>
-            <li><a href="">CONTACT</a></li>
-          </ul>
-        </div> 
-        <img class="burger" src="images/burger_icon.png" alt="" />
-        <script>
-          const menuBurger = document.querySelector(".burger")
-          const liste = document.querySelector(".liste")
-   
-          menuBurger.addEventListener('click',()=>{
-          liste.classList.toggle('menu_burger')
-          })
-  
-        </script>
-      </nav>
+    <header class="entete">
+      <a href="index.html">
+        <h3 class="Logo">Explorez<span>Plus</span></h3>
+      </a>
+
+      <ul class="liste">
+        <li><a href="#destinations">NOS DESTINATIONS</a></li>
+        <li><a href="#offres">NOS OFFRES</a></li>
+        <li><a href="#agences">NOS AGENCES</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+
+      <div class="context hidden">
+        <ul>
+          <li><a href="#vacances">NOS DESTINATIONS</a></li>
+          <li><a href="#offres">NOS OFFRES</a></li>
+          <li><a href="#agences">NOS AGENCES</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+      <div class="burger">
+        <img src="images/burger_icon.png" alt="" />
+      </div>
     </header>
 
     <main>
       <section class="aventure2">
         <h1>
-            <p> <span> Expédition polaire <br />
-              au Svalbard</span></p>
+          <p>
+            <span>
+              Expédition polaire <br />
+              au Svalbard</span
+            >
+          </p>
         </h1>
         <div class="block_prix">
           <div class="ap">a partir de</div>
           <div class="prix">5500€</div>
-        </div>  
+        </div>
         <img src="./images/Svalbard/vince-gx-ggD-QSZ8WLs-unsplash.jpg" />
       </section>
 
       <section class="description">
         <p>
-          Partez à l'aventure lors de cette expédition 
-          polaire de 10 jours et 9 nuits au Svalbard. 
-          Vous explorerez la région en bateau, en kayak, 
-          en motoneige et à pied pour observer la faune 
-          et la flore arctiques. Vous pourrez également 
-          visiter des villages traditionnels et en 
-          apprendre davantage sur l'histoire et la culture du Svalbard.
+          Partez à l'aventure lors de cette expédition polaire de 10 jours et 9
+          nuits au Svalbard. Vous explorerez la région en bateau, en kayak, en
+          motoneige et à pied pour observer la faune et la flore arctiques. Vous
+          pourrez également visiter des villages traditionnels et en apprendre
+          davantage sur l'histoire et la culture du Svalbard.
         </p>
         <div class="block_tarif">
           <!-- <img src="images/Svalbard/himanshu-saraf-6CyzUHXdY9s-unsplash.jpg" alt=""> -->
           <div class="container_tarif">
             <div class="container_cercle">
               <div class="images">
-                <img src="images/Svalbard/vince-gx-ggD-QSZ8WLs-unsplash.jpg">
-                <img src="images/Svalbard/vince-gx-URI1cll7nZ4-unsplash.jpg" alt="">
-                <img src="images/Svalbard/himanshu-saraf-6CyzUHXdY9s-unsplash.jpg">
-              </div> 
-            </div>  
+                <img src="images/Svalbard/vince-gx-ggD-QSZ8WLs-unsplash.jpg" />
+                <img
+                  src="images/Svalbard/vince-gx-URI1cll7nZ4-unsplash.jpg"
+                  alt=""
+                />
+                <img
+                  src="images/Svalbard/himanshu-saraf-6CyzUHXdY9s-unsplash.jpg"
+                />
+              </div>
+            </div>
             <h3>Inclus dans le tarif</h3>
             <ul>
               <li>Transferts aéroport inclus</li>
               <li>
-                Hébergement en cabine partagée sur un bateau pendant 7 nuits, et en hôtel pendant 2 nuits
+                Hébergement en cabine partagée sur un bateau pendant 7 nuits, et
+                en hôtel pendant 2 nuits
               </li>
               <li>Tous les repas inclus (petit déjeuner, déjeuner et dîner)</li>
-              <li>Guide anglophone pour les activités et visites mentionnées dans l'itinéraire</li>
+              <li>
+                Guide anglophone pour les activités et visites mentionnées dans
+                l'itinéraire
+              </li>
               <li>Toutes les activités mentionnées dans l'itinéraire</li>
               <li>Entrées aux monuments et aux parcs nationaux</li>
-              <li>Tous les équipements nécessaires pour les activités (kayak, motoneige, etc.)</li>
+              <li>
+                Tous les équipements nécessaires pour les activités (kayak,
+                motoneige, etc.)
+              </li>
             </ul>
           </div>
-        </div>  
+        </div>
         <button>je réserve</button>
       </section>
       <section class="en_savoir_plus">
         <div class="carrousel">
-          <img src="./images/Svalbard/vince-gx-ggD-QSZ8WLs-unsplash.jpg" alt="">
-          <img src="./images/Svalbard/vince-gx-URI1cll7nZ4-unsplash.jpg" alt="">
-          <img src="./images/Svalbard/fredrik-solli-wandem-7wUGrYL6B9c-unsplash.jpg" alt="">
+          <img
+            src="./images/Svalbard/vince-gx-ggD-QSZ8WLs-unsplash.jpg"
+            alt=""
+          />
+          <img
+            src="./images/Svalbard/vince-gx-URI1cll7nZ4-unsplash.jpg"
+            alt=""
+          />
+          <img
+            src="./images/Svalbard/fredrik-solli-wandem-7wUGrYL6B9c-unsplash.jpg"
+            alt=""
+          />
         </div>
         <div class="grid">
-          <div class="child"><img src="images/Svalbard/fredrik-solli-wandem-Sl2cV_6x3-g-unsplash.jpg"></div>
-          <div class="child2"><img src="images/Svalbard/andy-brunner-DE9YwfVgu2s-unsplash.jpg"></div>
-          <div class="child3"><img src="images/Svalbard/dylan-shaw-DIHT3ieH8W0-unsplash.jpg" alt=""></div>
-          <div class="child4"><img src="images/Svalbard/cezary-morga-zhgGi75rw5s-unsplash.jpg" alt=""></div> 
-        </div> 
+          <div class="child">
+            <img
+              src="images/Svalbard/fredrik-solli-wandem-Sl2cV_6x3-g-unsplash.jpg"
+            />
+          </div>
+          <div class="child2">
+            <img src="images/Svalbard/andy-brunner-DE9YwfVgu2s-unsplash.jpg" />
+          </div>
+          <div class="child3">
+            <img
+              src="images/Svalbard/dylan-shaw-DIHT3ieH8W0-unsplash.jpg"
+              alt=""
+            />
+          </div>
+          <div class="child4">
+            <img
+              src="images/Svalbard/cezary-morga-zhgGi75rw5s-unsplash.jpg"
+              alt=""
+            />
+          </div>
+        </div>
         <p>
-          Visite de Longyearbyen, capitale du Svalbard, et départ en bateau pour l'expédition et bien
-          d’autres activités vous attendent...
+          Visite de Longyearbyen, capitale du Svalbard, et départ en bateau pour
+          l'expédition et bien d’autres activités vous attendent...
         </p>
         <button>En savoir plus</button>
       </section>
@@ -117,10 +158,7 @@
         </ul>
       </div>
       <div class="icons">
-        <img
-          src="./images/icons.png"
-          alt=""
-        />
+        <img src="./images/icons.png" alt="" />
       </div>
     </footer>
   </body>

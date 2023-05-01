@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>bouthan</title>
+    <title>Aventure au Bouthan</title>
+    <link rel="icon" href="images/aviatex.png" sizes="32x32" type="image/png" />
     <link rel="stylesheet" href="style2.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta
@@ -18,28 +19,28 @@
   </head>
   <body>
     <header class="entete">
-      <nav>
-        <a href="index.html">
-          <h3>Explorez <span>Plus</span></h3>
-        </a>
-        <div class="liste">
-          <ul>
-            <li><a href=""> NOS DESTINATIONS</a></li>
-            <li><a href="">NOS OFFRES</a></li>
-            <li><a href="">NOS AGENCES</a></li>
-            <li><a href="">CONTACT</a></li>
-          </ul>
-        </div>
-        <img class="burger" src="images/burger_icon.png" alt="" />
-        <script>
-          const menuBurger = document.querySelector(".burger");
-          const liste = document.querySelector(".liste");
+      <a href="index.html">
+        <h3 class="Logo">Explorez<span>Plus</span></h3>
+      </a>
 
-          menuBurger.addEventListener("click", () => {
-            liste.classList.toggle("menu_burger");
-          });
-        </script>
-      </nav>
+      <ul class="liste">
+        <li><a href="#destinations">NOS DESTINATIONS</a></li>
+        <li><a href="#offres">NOS OFFRES</a></li>
+        <li><a href="#agences">NOS AGENCES</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+
+      <div class="context hidden">
+        <ul>
+          <li><a href="#vacances">NOS DESTINATIONS</a></li>
+          <li><a href="#offres">NOS OFFRES</a></li>
+          <li><a href="#agences">NOS AGENCES</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+      <div class="burger">
+        <img src="images/burger_icon.png" alt="" />
+      </div>
     </header>
 
     <main>

@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Galapagos</title>
+    <title>Exploration des Galapagos</title>
+    <link rel="icon" href="images/aviatex.png" sizes="32x32" type="image/png" />
     <link rel="stylesheet" href="style2.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,63 +14,78 @@
     />
   </head>
   <body>
-    <header class="headerscroll">
-      <nav>
-        <h3>Explorez <span>Plus</span></h3>
-        <div class="liste">
-          <ul>
-            <li><a href=""> NOS DESTINATIONS</a></li>
-            <li><a href="">NOS OFFRES</a></li>
-            <li><a href="">NOS AGENCES</a></li>
-            <li><a href="">CONTACT</a></li>
-          </ul>
-        </div> 
-        <img class="burger" src="images/burger_icon.png" alt="" />
-        <script>
-          const menuBurger = document.querySelector(".burger")
-          const liste = document.querySelector(".liste")
-   
-          menuBurger.addEventListener('click',()=>{
-          liste.classList.toggle('menu_burger')
-          })
-  
-        </script>
-      </nav>
-      
+    <header class="entete">
+      <a href="index.html">
+        <h3 class="Logo">Explorez<span>Plus</span></h3>
+      </a>
+
+      <ul class="liste">
+        <li><a href="#destinations">NOS DESTINATIONS</a></li>
+        <li><a href="#offres">NOS OFFRES</a></li>
+        <li><a href="#agences">NOS AGENCES</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+
+      <div class="context hidden">
+        <ul>
+          <li><a href="#vacances">NOS DESTINATIONS</a></li>
+          <li><a href="#offres">NOS OFFRES</a></li>
+          <li><a href="#agences">NOS AGENCES</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+      <div class="burger">
+        <img src="images/burger_icon.png" alt="" />
+      </div>
     </header>
 
     <main>
       <section class="aventure4">
         <h1>
-            <p> <span>Exploration des<br />
-              Galapagos</span></p>
+          <p>
+            <span
+              >Exploration des<br />
+              Galapagos</span
+            >
+          </p>
         </h1>
         <div class="block_prix">
           <div class="ap">a partir de</div>
           <div class="prix">3500€</div>
-        </div>  
-        <img src="images/Galapagos/rafael-idrovo-espinoza-7Py2ei9arGE-unsplash.jpg" alt="" />
+        </div>
+        <img
+          src="images/Galapagos/rafael-idrovo-espinoza-7Py2ei9arGE-unsplash.jpg"
+          alt=""
+        />
       </section>
 
       <section class="description">
         <p>
-          Partez pour une aventure inoubliable de 8 
-          jours et 7 nuits dans les îles Galapagos. 
-          Vous explorerez les paysages uniques, la faune et la 
-          flore fascinante de cet archipel mythique. 
-          Profitez de l'expérience de nos guides locaux 
-          pour découvrir les secrets de cet environnement unique.
+          Partez pour une aventure inoubliable de 8 jours et 7 nuits dans les
+          îles Galapagos. Vous explorerez les paysages uniques, la faune et la
+          flore fascinante de cet archipel mythique. Profitez de l'expérience de
+          nos guides locaux pour découvrir les secrets de cet environnement
+          unique.
         </p>
         <div class="block_tarif">
           <!-- <img src="images/Galapagos/rafael-idrovo-espinoza-7Py2ei9arGE-unsplash.jpg" alt=""> -->
           <div class="container_tarif">
             <div class="container_cercle">
               <div class="images">
-                <img src="images/Galapagos/christopher-alvarenga-kXar5SprW2E-unsplash.jpg" alt="">
-                <img src="images/Galapagos/patrick-boucher-CKH55mO-INE-unsplash.jpg" alt="">
-                <img src="images/Galapagos/simon-berger-qOmxP7W8svM-unsplash.jpg" alt="">
+                <img
+                  src="images/Galapagos/christopher-alvarenga-kXar5SprW2E-unsplash.jpg"
+                  alt=""
+                />
+                <img
+                  src="images/Galapagos/patrick-boucher-CKH55mO-INE-unsplash.jpg"
+                  alt=""
+                />
+                <img
+                  src="images/Galapagos/simon-berger-qOmxP7W8svM-unsplash.jpg"
+                  alt=""
+                />
               </div>
-            </div>   
+            </div>
             <h3>Inclus dans le tarif</h3>
             <ul>
               <li>Transferts aéroport inclus</li>
@@ -83,26 +99,50 @@
               <li>Équipement de snorkeling</li>
             </ul>
           </div>
-        </div>  
+        </div>
         <button>je réserve</button>
       </section>
       <section class="en_savoir_plus">
-       
-<div class="carrousel">
-  <img src="./images/Galapagos/jose-aragones-p6oJeHzKh1Y-unsplash.jpg" alt="">
-  <img src="images/Galapagos/kiyoshi-pd1ii6ROhQA-unsplash.jpg" alt="">
-  <img src="images/Galapagos/patrick-boucher-kbEaQKpivcI-unsplash.jpg" alt="">
-</div>
+        <div class="carrousel">
+          <img
+            src="./images/Galapagos/jose-aragones-p6oJeHzKh1Y-unsplash.jpg"
+            alt=""
+          />
+          <img src="images/Galapagos/kiyoshi-pd1ii6ROhQA-unsplash.jpg" alt="" />
+          <img
+            src="images/Galapagos/patrick-boucher-kbEaQKpivcI-unsplash.jpg"
+            alt=""
+          />
+        </div>
         <div class="grid">
-          <div class="child"><img src="images/Galapagos/amy-perez-0d2DREzdG_k-unsplash.jpg" alt=""></div>
-          <div class="child2"><img src="images/Galapagos/rod-long-PRteKxHxRbo-unsplash.jpg" alt=""></div>
-          <div class="child3"><img src="images/Galapagos/luna-zhang-nwFS7Eh_pao-unsplash.jpg" alt=""></div>
-          <div class="child4"><img src="images/Galapagos/mac-gaither-kVnTR27tIgw-unsplash.jpg" alt=""></div>
-          
-        </div> 
+          <div class="child">
+            <img
+              src="images/Galapagos/amy-perez-0d2DREzdG_k-unsplash.jpg"
+              alt=""
+            />
+          </div>
+          <div class="child2">
+            <img
+              src="images/Galapagos/rod-long-PRteKxHxRbo-unsplash.jpg"
+              alt=""
+            />
+          </div>
+          <div class="child3">
+            <img
+              src="images/Galapagos/luna-zhang-nwFS7Eh_pao-unsplash.jpg"
+              alt=""
+            />
+          </div>
+          <div class="child4">
+            <img
+              src="images/Galapagos/mac-gaither-kVnTR27tIgw-unsplash.jpg"
+              alt=""
+            />
+          </div>
+        </div>
         <p>
-          Visite de la réserve naturelle d'El Chato, observation des tortues géantes et bien
-          d’autres activités vous attendent...
+          Visite de la réserve naturelle d'El Chato, observation des tortues
+          géantes et bien d’autres activités vous attendent...
         </p>
         <button>En savoir plus</button>
       </section>
@@ -119,10 +159,7 @@
         </ul>
       </div>
       <div class="icons">
-        <img
-          src="./images/icons.png"
-          alt=""
-        />
+        <img src="./images/icons.png" alt="" />
       </div>
     </footer>
   </body>

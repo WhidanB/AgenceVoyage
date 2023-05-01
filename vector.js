@@ -59,22 +59,3 @@ slide.addEventListener("mousemove", (e) => {
   const walk = (x - startX) * SCROLL_SPEED;
   slide.scrollLeft = scrollLeft - walk;
 });
-
-// //fonction burger
-const menuBurger = document.querySelector(".burger");
-const liste = document.querySelector(".context");
-
-menuBurger.addEventListener("click", () => {
-  // liste.classList.toggle("menu_burger");
-  if (liste.classList.contains("affich") === true) {
-    console.log("click");
-    liste.classList.remove("affich");
-    liste.classList.add("hidden");
-  } else {
-    console.log("click");
-
-    liste.classList.remove("hidden");
-    liste.classList.add("affich");
-    header.classList.add("headerscroll");
-  }
-});
