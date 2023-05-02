@@ -199,7 +199,15 @@ img {
   margin-top: 40px;
   color: white;
 }
+.trait {
+  height: 0.1px;
+  width: 70%;
+  border: solid rgba(0, 0, 0, 0.425);
+  margin: auto;
+  margin-bottom: 50px;
+  border-width: 0.2px;
 
+}
 ul {
   list-style-type: none;
 }
@@ -366,10 +374,6 @@ button:hover {
   }
 
   .block_prix {
-    /* position: absolute;
-  padding-right: 5%;
-  top: 80%;
-  width: 100%; */
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -468,7 +472,10 @@ button:hover {
     padding: 0;
     width: 100%;
   }
-
+ .container_tarif ul {
+  text-align: center;
+  font-size: 1.5rem;
+ }
   button {
     margin-top: 80px;
     width: 40%;
@@ -497,6 +504,11 @@ button:hover {
     grid-template-rows: repeat(2, 300px);
     width: 90%;
     height: auto;
+    
+    transition: transform 0.2s;
+  }
+  .grid img:hover{
+    transform: scale(1.1);
   }
 
   .child {
@@ -506,11 +518,6 @@ button:hover {
   .child3 {
     grid-row: 1/3;
     grid-column: 3;
-  }
-
-  .container_footer {
-    display: flex;
-    align-items: baseline;
   }
 
   .container_footer ul {
@@ -542,14 +549,25 @@ button:hover {
     justify-content: center;
     align-items: center;
   }
+  .container_footer h2 {
+    display: block;
+    text-align: center;
+    margin-bottom: 50px;
+  }
 }
 @media screen and (max-width: 1170px) {
   .block_tarif img {
     display: none;
   }
+  .trait {
+    display: none;
+  }
+  .container_cercle {
+    margin-bottom: 0px;
+  }
 
   .container_tarif {
-    width: 90%;
+    
     margin: auto;
     background-color: #1879c1;
     color: white;
@@ -558,9 +576,11 @@ button:hover {
 }
 
 @media screen and (min-width: 1200px) {
+
   .burger {
     display: none;
   }
+
   .liste {
     display: flex;
     align-items: center;
@@ -591,12 +611,8 @@ button:hover {
 
   .images img {
     display: flex;
-    width: 500px;
-    height: 500px;
-  }
-
-  .images {
-    display: flex;
+    width: 400px;
+    height: 400px;
   }
 
   .container_tarif {
@@ -608,6 +624,7 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 2rem;
   }
 
   .container_cercle {
@@ -616,16 +633,6 @@ button:hover {
     width: 100%;
     margin-bottom: 100px;
   }
-
-  /* .cercle{
-    
-    display:  flex;
-    width : 400px;
-    height : 400px;
-    -moz-border-radius : 25px;
-    -webkit-border-radius : 25px;
-    border-radius : 300px; 
-  } */
 
   .grid {
     display: grid;
@@ -659,12 +666,21 @@ button:hover {
   }
 
   .block_tarif ul {
-    width: 80%;
+    width: 100%;
     margin: auto;
     margin-top: 50px;
   }
 
   button {
     font-size: 2.5rem;
+  }
+  .container_footer {
+    display: flex;
+    align-items: center;
+  }
+  .container_footer h2 {
+    display: block;
+    
+    margin: 0;
   }
 }
