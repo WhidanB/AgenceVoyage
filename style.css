@@ -620,6 +620,46 @@ ul {
 
   grid-template-rows: 15% 35% 50%;
 }
+
+.modal2 {
+  position: absolute;
+  z-index: 5;
+  width: 90vw;
+  height: 80vh;
+  /* display: flex;
+  flex-direction: column; */
+  background-color: #ffffff;
+  border-radius: 15px;
+
+  grid-template-rows: 15% 35% 50%;
+}
+
+.modal3 {
+  position: absolute;
+  z-index: 5;
+  width: 90vw;
+  height: 80vh;
+  /* display: flex;
+  flex-direction: column; */
+  background-color: #ffffff;
+  border-radius: 15px;
+
+  grid-template-rows: 15% 35% 50%;
+}
+
+.modal4 {
+  position: absolute;
+  z-index: 5;
+  width: 90vw;
+  height: 80vh;
+  /* display: flex;
+  flex-direction: column; */
+  background-color: #ffffff;
+  border-radius: 15px;
+
+  grid-template-rows: 15% 35% 50%;
+}
+
 .modal1 h2 {
   grid-row: 1;
 }
@@ -627,7 +667,29 @@ ul {
 .zone_img1 {
   grid-row: 2;
   background-image: url(images/Bouthan/temple.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.zone_img2 {
+  grid-row: 2;
+  background-image: url(images/berlin.jpg);
   background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.zone_img3 {
+  grid-row: 2;
+  background-image: url(images/Svalbard/james-padolsey-6WneSv56YVI-unsplash.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.zone_img4 {
+  grid-row: 2;
+  background-image: url(images/Galapagos/rod-long-PRteKxHxRbo-unsplash.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
