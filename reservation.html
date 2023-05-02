@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      sizes="32x32"
+      href="images/aviatex.png"
+      type="image/png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BenchNine:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Mes réservations</title>
+  </head>
+  <body>
+    <header class="entete">
+      <a href="index.html">
+        <h3 class="Logo">Explorez<span>Plus</span></h3>
+      </a>
+
+      <ul class="liste">
+        <li><a href="#destinations">NOS DESTINATIONS</a></li>
+        <li><a href="#offres">NOS OFFRES</a></li>
+        <li><a href="#agences">NOS AGENCES</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+
+      <div class="context hidden">
+        <ul>
+          <li><a href="index.html#vacances">NOS DESTINATIONS</a></li>
+          <li><a href="index.html#moment">NOS OFFRES</a></li>
+          <li><a href="index.html#avis">AVIS</a></li>
+          <li><a href="index.html#contact">CONTACT</a></li>
+        </ul>
+      </div>
+      <div class="burger">
+        <img src="images/burger_icon.png" alt="" />
+      </div>
+    </header>
+
+    <section class="fond">
+      <div class="overlay hidden"></div>
+      <div class="modal1 hidden">
+        <h2>Réservation n°58KL6V</h2>
+        <div class="zone_img1"></div>
+        <div class="conteneur_infos">
+          <h2>Aventure au Bouthan</h2>
+          <h6>Du 27/08/2023 au 05/09/2023</h6>
+          <div class="desc_reserv">
+            <p>Départ de: Paris</p>
+            <p>2 Adultes</p>
+            <div class="prix_reserv">
+              <h6>Réglé par CB:</h6>
+              <p>4674€</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reserv_container">
+        <h3>Mes réservations</h3>
+        <article class="reservation open1">
+          <div class="img_reserv1"></div>
+          <div class="info_reserv">
+            <h5><span>Réservation n°</span>58KL6V</h5>
+            <h6>27/08/2023</h6>
+            <p>Aventure au Bouthan</p>
+          </div>
+        </article>
+        <article class="reservation open2">
+          <div class="img_reserv2"></div>
+          <div class="info_reserv">
+            <h5><span>Réservation n°</span>58KL6V</h5>
+            <h6>07/10/2022</h6>
+            <p>Séjour à Berlin</p>
+          </div>
+        </article>
+        <article class="reservation open3">
+          <div class="img_reserv3"></div>
+          <div class="info_reserv">
+            <h5><span>Réservation n°</span>58KL6V</h5>
+            <h6>19/12/2021</h6>
+            <p>Expédition polaire au Svalbard</p>
+          </div>
+        </article>
+        <article class="reservation open4">
+          <div class="img_reserv4"></div>
+          <div class="info_reserv">
+            <h5><span>Réservation n°</span>58KL6V</h5>
+            <h6>11/02/2021</h6>
+            <p>Exploration des Galapagos</p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <script src="index.js"></script>
+    <script src="modal.js"></script>
+  </body>
+</html>
