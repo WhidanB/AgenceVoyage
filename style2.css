@@ -206,7 +206,6 @@ img {
   margin: auto;
   margin-bottom: 50px;
   border-width: 0.2px;
-
 }
 ul {
   list-style-type: none;
@@ -472,10 +471,10 @@ button:hover {
     padding: 0;
     width: 100%;
   }
- .container_tarif ul {
-  text-align: center;
-  font-size: 1.5rem;
- }
+  .container_tarif ul {
+    text-align: center;
+    font-size: 1.5rem;
+  }
   button {
     margin-top: 80px;
     width: 40%;
@@ -504,10 +503,10 @@ button:hover {
     grid-template-rows: repeat(2, 300px);
     width: 90%;
     height: auto;
-    
+
     transition: transform 0.2s;
   }
-  .grid img:hover{
+  .grid img:hover {
     transform: scale(1.1);
   }
 
@@ -555,6 +554,15 @@ button:hover {
     margin-bottom: 50px;
   }
 }
+
+@media screen and (min-width: 700px) {
+  .entete,
+  .headerscroll {
+    padding: 0 10vw;
+    align-items: center;
+  }
+}
+
 @media screen and (max-width: 1170px) {
   .block_tarif img {
     display: none;
@@ -567,7 +575,6 @@ button:hover {
   }
 
   .container_tarif {
-    
     margin: auto;
     background-color: #1879c1;
     color: white;
@@ -576,7 +583,6 @@ button:hover {
 }
 
 @media screen and (min-width: 1200px) {
-
   .burger {
     display: none;
   }
@@ -680,7 +686,7 @@ button:hover {
   }
   .container_footer h2 {
     display: block;
-    
+
     margin: 0;
   }
 }

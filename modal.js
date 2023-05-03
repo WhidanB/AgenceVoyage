@@ -60,9 +60,23 @@ overlay.addEventListener("click", () => {
   modal4.classList.add("hidden");
 });
 
-// // Escape press closing
-// document.addEventListener("keydown", (e) => {
-//   if (e.key === "Escape" && !modal.classList.contains("hidden")) {
-//     closemodal();
-//   }
-// });
+// Escape press closing
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && !modal1.classList.contains("hidden")) {
+    overlay.classList.add("hidden");
+    modal1.classList.remove("montrer");
+    modal1.classList.add("hidden");
+  } else if (e.key === "Escape" && !modal2.classList.contains("hidden")) {
+    overlay.classList.add("hidden");
+    modal2.classList.remove("montrer");
+    modal2.classList.add("hidden");
+  } else if (e.key === "Escape" && !modal3.classList.contains("hidden")) {
+    overlay.classList.add("hidden");
+    modal3.classList.remove("montrer");
+    modal3.classList.add("hidden");
+  } else if (e.key === "Escape" && !modal4.classList.contains("hidden")) {
+    overlay.classList.add("hidden");
+    modal4.classList.remove("montrer");
+    modal4.classList.add("hidden");
+  }
+});

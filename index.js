@@ -42,3 +42,16 @@ menuBurger.addEventListener("click", () => {
     header.classList.add("headerscroll");
   }
 });
+
+// document.addEventListener("click", () => {
+//   if (liste.classList.contains("affich") === true) {
+//     console.log("nope");
+//     liste.classList.remove("affich");
+//     liste.classList.add("hidden");
+//   } else if (liste.classList.contains("affich") === false) {
+//     console.log("oui");
+//     liste.classList.remove("hidden");
+//     liste.classList.add("affich");
+//     header.classList.add("headerscroll");
+//   }
+// });
