@@ -806,7 +806,7 @@ ul {
 .form-box {
   position: relative;
   width: 90vw;
-  height: 450px;
+  height: 60vh;
   background: transparent;
   border: 2px solid #1879c1;
   border-radius: 20px;
@@ -817,7 +817,7 @@ ul {
 }
 .connect h2 {
   font-size: 2em;
-  color: #1879c1;
+  color: #fff;
   text-align: center;
 }
 .inputbox {
@@ -1730,6 +1730,18 @@ input:valid ~ label {
   .info_reserv {
     display: flex;
     flex-direction: column;
+  }
+
+  /* PAGE LOGIN */
+  .arriere {
+    background-image: url(images/westwind-air-service-LT1WeeVzd6g-unsplash.jpg);
+  }
+
+  .form-box {
+    width: 30vw;
+  }
+  .connect h2 {
+    color: #1879c1;
   }
 }
 

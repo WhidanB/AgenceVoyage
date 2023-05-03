@@ -592,6 +592,7 @@ button:hover {
     align-items: center;
     gap: 1rem;
     margin: 0;
+    font-weight: 700;
   }
 
   nav img {
