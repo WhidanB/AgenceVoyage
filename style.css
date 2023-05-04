@@ -1817,6 +1817,23 @@ input:valid ~ label {
   .connect h2 {
     color: #1879c1;
   }
+
+  .container_footer {
+    display: flex;
+    align-items: center;
+  }
+  .container_footer h2 {
+    display: block;
+
+    margin: 0;
+  }
+  .container_footer ul {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (min-width: 1920px) {
