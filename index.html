@@ -25,12 +25,12 @@
       </a>
 
       <ul class="liste">
-        <li><a href="#destinations">NOS DESTINATIONS</a></li>
-        <li><a href="#offres">NOS OFFRES</a></li>
-        <li><a href="#agences">NOS AGENCES</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-        <li><a href="login.html">SE CONNECTER</a></li>
-        <li><a href="reservation.html">MES RESERVATIONS</a></li>
+        <li class="Logo"><a href="#destinations">NOS DESTINATIONS</a></li>
+        <li class="Logo"><a href="#offres">NOS OFFRES</a></li>
+        <li class="Logo"><a href="#agences">NOS AGENCES</a></li>
+        <li class="Logo"><a href="#contact">CONTACT</a></li>
+        <li class="Logo"><a href="login.html">SE CONNECTER</a></li>
+        <li class="Logo"><a href="reservation.html">MES RESERVATIONS</a></li>
       </ul>
 
       <div class="context hidden">
@@ -54,7 +54,7 @@
         <div class="input_container">
 
           <div class="input">
-            <img src="images/Symboles/avion.png" alt="" />
+            <img src="images/airplane.svg" alt="">
             <input type="text" placeholder="Destination" />
           </div>
           <div class="input">
@@ -62,15 +62,23 @@
           <input type="text" placeholder="Ville de départ" />
         </div>
         <div class="input">
-          <img src="images/Symboles/calendrier.png" alt="" />
-          <input type="text" placeholder="Dates de départ" />
+          <img src="images/calendar.svg" alt="">
+          <input type="text" placeholder="Dates" />
         </div>
         <div class="input">
-          <img src="images/Symboles/passager.png" alt="" />
-          <input type="text" placeholder="Passagers" />
+          <img src="images/people.svg" alt="">
+          <select name="Voyageurs" id="">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+          </select>
         </div>
       </div>
-        <button class="rechercher">Rechercher</button>
+      <div class="dubouton">
+        <button class="rechercher1"><ion-icon name="search-outline"></ion-icon></button>
+      </div>
       </form>
       <div class="découvrez">
         <img class="vector1" src="images/Symboles/Vector 2.png" alt="" />
@@ -384,7 +392,7 @@
     <section id="avis" class="section4">
       <h2>Ce qu'en pensent nos voyageurs</h2>
       <div class="carre">
-        <article class="avis">
+        <article class="avis tete1">
           <div class="tete">
             <img src="images/Avis/alice.png" alt="" />
           </div>
@@ -399,7 +407,7 @@
             </div>
           </div>
         </article>
-        <article class="avis">
+        <article class="avis tete2">
           <div class="tete">
             <img src="images/Avis/Clément.png" alt="" />
           </div>
@@ -415,7 +423,7 @@
             </div>
           </div>
         </article>
-        <article class="avis">
+        <article class="avis tete3">
           <div class="tete">
             <img src="images/Avis/lucas.png" alt="" />
           </div>
@@ -431,7 +439,7 @@
             </div>
           </div>
         </article>
-        <article class="avis">
+        <article class="avis tete4">
           <div class="tete">
             <img src="images/Avis/Julie.png" alt="" />
           </div>
@@ -515,6 +523,8 @@
         <img src="./images/icons.png" alt="" />
       </div>
     </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="index.js"></script>
     <script src="vector.js"></script>
   </body>
